@@ -1,0 +1,40 @@
+@use "global" as *;
+
+.tittle{
+    text-align: center;
+    width: rem(281);
+    text-align: center;
+    padding: 0 rem(42);
+  
+}
+
+// leter-space? irukamo
+
+.tittle__english{
+    color: red;
+    font-family: $second-font-family;
+    font-size: rem(32);
+    font-style: normal;
+    font-weight: 400;
+    line-height: rem(40);
+    text-align: center;
+   
+    
+}
+
+
+.tittle__japanese{
+text-align: center;
+font-family: Noto Sans JP;
+font-size: rem(12);
+font-style: normal;
+font-weight: 400;
+line-height: rem(18); /* 150% */
+margin-top: rem(4);
+margin-bottom: rem(4);
+}
+
+
+.tittle__english::first-letter{
+    color: #408F95;
+}

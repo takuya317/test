@@ -1,0 +1,49 @@
+@use "global" as *;
+
+.button{
+    width:rem(206) ;
+    
+    height: rem(56);
+    
+
+   
+}
+
+.button__inner{
+    display: inline-block;
+    background-color: rgba(64, 143, 149, 1);
+    position: relative;
+    width: rem(202);
+    padding: rem(16) rem(40);
+   z-index: 1;
+    display: flex;
+ 
+
+
+}
+
+.button__inner::after{
+    content: "";
+    border: 1px solid rgba(64, 143, 149, 1);
+    position: absolute;
+    width: rem(202);
+    // height: 100%;
+    bottom: rem(-4);
+    left: rem(4);
+    top: rem(4);
+}
+
+.button__inner span{
+    padding-right: rem(8);
+    color: #FFF;
+    font-family: Gotu;
+    font-size: rem(14);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+    white-space: nowrap;
+}
+
+.button__inner svg{
+    margin-top: rem(6);
+}
