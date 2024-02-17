@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.tittle--japanese{
+  
+    
+    @include mq("md"){
+        padding-left: rem(33);
+    }
+    
+    }

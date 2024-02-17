@@ -1,0 +1,133 @@
+@use "global" as *;
+
+.information{
+    text-align: center;
+    height: rem(779);
+    background: var(--green2, #DDF0F1);
+    @include mq("md"){
+        height: rem(640);
+    }
+}
+
+.information__tittle{
+    margin-top: rem(80);
+
+    @include mq("md"){
+        margin-top: rem(100);
+        margin-right: rem(44);
+    }
+}
+
+
+
+.information__img{
+    width: rem(345);
+    height: rem(227);
+    position: relative;
+    margin-top: rem(24);
+    margin-right: rem(15);
+    margin-left: rem(15);
+    margin-bottom: rem(0);
+
+    @include mq("md"){
+        width: rem(540);
+        height: rem(356);
+        margin-top: rem(37);
+        margin-left: rem(18);
+        
+    }
+}
+
+.information__img::before{
+    content: "";
+    display: block;
+    padding-top: 67.14285%;
+
+}
+
+.information__img img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.information__inner{
+    padding:rem(24) rem(15) 0 rem(15) ;
+
+    @include mq("md"){
+        width: rem(492);
+        padding-top: rem(99);
+        padding-left: rem(0);
+        padding-right: rem(0);
+        margin-left: rem(36);
+
+
+    }
+}
+
+.information__text1{
+   
+    text-align: left;
+    color: var(--green, #0D2936);
+font-family: "Noto Sans JP", sans-serif;
+font-size: rem(20);
+font-style: normal;
+font-weight: 700;
+line-height: 1.2; /* 120% */
+padding-bottom: rem(4);
+
+border-bottom: rem(1) solid var(--greenaccent, #408F95) ;
+
+@include mq("md"){
+    color: var(--green, #0D2936);
+font-family: "Noto Sans JP";
+font-size: rem(24);
+font-style: normal;
+font-weight: 700;
+line-height: 1; /* 120% */
+}
+
+}
+
+.information__text2{
+    text-align: left;
+    margin-top: rem(8);
+    color: var(--green, #0D2936);
+font-family: "Noto Sans JP", sans-serif;
+font-size: rem(16);
+font-style: normal;
+font-weight: 400;
+line-height: 1.5; /* 150% */
+letter-spacing: 0.005em;
+
+@include mq("md"){
+    color: #000;
+    font-family: "Noto Sans JP";
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+
+}
+}
+
+.information__button{
+    margin-top: rem(40);
+}
+
+.information__wrap{
+    max-width: rem(375);
+    margin-left: auto;
+    margin-right: auto;
+    @include mq("md"){
+        display: flex;
+        max-width: rem(1200);
+        justify-content: center;
+        padding-right: rem(24);
+   
+    }
+}

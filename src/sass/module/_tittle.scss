@@ -1,6 +1,7 @@
 @use "global" as *;
 
 .tittle{
+    display: inline-block;
     text-align: center;
     width: rem(281);
     text-align: center;
@@ -11,14 +12,17 @@
 // leter-space? irukamo
 
 .tittle__english{
-    color: red;
-    font-family: $second-font-family;
+    color:black;
+    font-family: "Gotu", sans-serif;
     font-size: rem(32);
     font-style: normal;
     font-weight: 400;
     line-height: rem(40);
     text-align: center;
    
+    @include mq("md"){
+        font-size: rem(40);
+    }
     
 }
 
@@ -32,6 +36,12 @@ font-weight: 400;
 line-height: rem(18); /* 150% */
 margin-top: rem(4);
 margin-bottom: rem(4);
+color: rgba(64, 143, 149, 1);
+
+@include mq("md"){
+    margin-top: rem(8);
+}
+
 }
 
 

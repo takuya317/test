@@ -1,0 +1,75 @@
+@use "global" as *;
+
+.header{
+  height: rem(80);
+  background: rgba(13, 41, 54, 0.68);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  @include mq("md"){
+   height: rem(90);
+}
+}
+
+.header__inner{
+    height: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+    padding-left: rem(15);
+
+
+  @include mq("md"){
+    padding-left: rem(40);
+ }
+    
+}
+
+.header__logo img{
+    width:rem(102) ;
+    height: rem(38);
+
+    @include mq("md"){
+      width:rem(133) ;
+    height: rem(50);
+  }
+}
+
+.header__drawer{
+  margin-right:rem(15) ;
+}
+
+
+
+.header.is-active{
+  background-color: rgba(64, 143, 149, 1);
+ 
+}
+
+.header__nav{
+
+  height: 100vh;
+  background-color: rgba(64, 143, 149, 1);
+  padding-top: rem(20);
+  padding-right: rem(25);
+  padding-left: rem(15);
+  transition: all .5s;
+
+
+}
+
+
+
+
+.header__wrap{
+  display: flex;
+  margin-right: rem(40);
+}
+
+.header__card{
+  margin-left: rem(40);
+}

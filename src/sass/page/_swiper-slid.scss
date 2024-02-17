@@ -1,0 +1,10 @@
+@use "global" as *;
+
+.swiper-slide:not(:last-child){
+    margin-right: rem(24);
+    @include mq("md"){
+        margin-right: rem(40);
+    }
+
+}
+

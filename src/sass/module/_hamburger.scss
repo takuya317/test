@@ -1,0 +1,50 @@
+@use "global" as *;
+
+.humburger{
+    width: rem(32);
+    height: rem(24);
+    position: relative;
+    @include mq("md") {
+        display: none;
+      }
+}
+
+.humburger span{
+    position: absolute;
+    width: inherit;
+    height: rem(1);
+    background-color: white;
+    transition: all .5s;
+    
+}
+
+.humburger span:nth-child(2){
+    position: absolute;
+    top: 50%;
+    opacity: 1;
+}
+
+.humburger span:last-child{
+    position: absolute;
+    top: 100%;
+}
+
+// 下からハンバーガー挙動
+
+.humburger.is-active span:nth-child(2){
+    opacity: 0;
+}
+
+.humburger.is-active span:first-child{
+    position: absolute;
+    transform: rotate(37deg);
+    top: 50%;
+   
+   
+}
+
+.humburger.is-active span:last-child{
+    position: absolute;
+    transform: rotate(-37deg);
+    top: 50%;
+}

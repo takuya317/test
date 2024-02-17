@@ -1,0 +1,132 @@
+
+@use "global" as *;
+
+
+.voice-card{
+width: rem(345);
+height: rem(420);
+background: var(--White, #FFF);
+box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.25);
+
+@include mq("md"){
+ 
+    width: rem(520);
+height: rem(396);
+
+    }
+}
+
+.voice-card__img{
+    width: rem(151);
+    height: rem(117);
+    margin-top: rem(7);
+
+
+@include mq("md"){
+    width: rem(180);
+    height: rem(140);
+}
+    
+}
+
+.voice-card__wrapper{
+    display: flex;
+    @include mq("md"){
+      justify-content: space-between;
+    }
+
+}
+
+.voice-card__inner{
+    text-align: left;
+    @include mq("md"){
+        width: rem(276);
+
+      }
+
+}
+
+.voice-card__text1{
+    color: var(--green, #0D2936);
+font-family: "Noto Sans JP";
+font-size: rem(12);
+font-style: normal;
+font-weight: 400;
+
+line-height: 1.5; /* 150% */
+@include mq("md"){
+    padding-top: rem(12);
+
+  }
+
+}
+
+.voice-card__text2{
+    color: var(--greenaccent, #408F95);
+font-family: "Noto Sans JP";
+font-size: rem(12);
+font-style: normal;
+font-weight: 400;
+line-height: 1.83333; /* 183.333% */
+border: rem(1) solid var(--greenaccent, #408F95);
+display: inline-block;
+
+margin-top: rem(-2);
+margin-left: rem(-1);
+padding-top: rem(2);
+padding-right: rem(11);
+padding-bottom: rem(4);
+padding-left: rem(12);
+margin-bottom: rem(1);
+
+
+@include mq("md"){
+    padding-top: rem(6);
+    padding-right: rem(16);
+    padding-bottom: rem(4);
+    padding-left: rem(15);
+    margin-bottom: rem(0);
+}
+
+}
+
+.voice-card__text3{
+    color: #000;
+font-family: "Noto Sans JP";
+font-size: rem(16);
+font-style: normal;
+font-weight: 400;
+line-height: 1.5; /* 150% */
+margin-top: rem(2);
+
+@include mq("md"){
+    font-size: rem(24);
+    margin-top: rem(5);
+}
+}
+
+.voice-card__text4{
+    text-align: left;
+    margin-top: rem(16);
+    color: #000;
+font-family: "Noto Sans JP";
+font-size: rem(16);
+font-style: normal;
+font-weight: 400;
+line-height: 1.5; /* 150% */
+@include mq("md"){
+    color: var(--green, #0D2936); 
+    margin-top: rem(40);
+}
+
+}
+
+.voice-card__textes{
+
+    @include mq("md"){
+     display: flex;
+     justify-content: space-between;
+     margin-top: rem(34);
+    }
+
+}

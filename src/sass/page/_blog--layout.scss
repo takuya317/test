@@ -1,0 +1,22 @@
+@use "global" as *;
+
+.blog--layout{
+    margin-top: rem(80);
+    @include mq("md"){
+        margin-top: rem(-0);
+        
+    
+        }
+}
+
+.blog--layout__color{
+    @include mq("md"){
+    color: #FFF !important;
+    }
+}
+
+.blog--layout__color::first-letter{
+    @include mq("md"){
+    color: #FFF !important;
+    }
+}

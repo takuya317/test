@@ -1,0 +1,57 @@
+@use "global" as *;
+
+.itemsA__item{
+    margin-bottom: rem(18);
+    // デザインカンプではrem24
+}
+
+.itemsA__item:nth-child(2){
+    padding-left: rem(24);
+} 
+
+.itemsA__item:nth-child(3){
+    padding-left: rem(24);
+    white-space: nowrap;
+} 
+
+.itemsA__item:nth-child(4){
+    padding-left: rem(24);
+} 
+
+.itemsA__item:last-child{
+    padding-top: rem(16);
+} 
+
+.itemsA__item a{
+    color: var(--White, #FFF);
+font-family: "Noto Sans JP";
+font-size: rem(16);
+font-style: normal;
+font-weight: 400;
+line-height: rem(18); 
+// line-height: 1.125;
+}
+
+.itemsA__item:first-child a{
+    font-weight: 700;
+}
+
+
+
+.itemsA__item:last-child a{
+    font-weight: 700;
+}
+
+.itemsA__item:first-child a::before{
+content: url('/assets/images/common/hitode.svg'); 
+width: rem(18);
+height: rem(18);
+margin-right:rem(4);
+}
+
+.itemsA__item:last-child a::before{
+    content: url('/assets/images/common/hitode.svg'); 
+    width: rem(18);
+    height: rem(18);
+    margin-right:rem(4);
+    }

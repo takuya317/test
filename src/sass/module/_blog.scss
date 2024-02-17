@@ -1,0 +1,112 @@
+@use "global" as *;
+
+
+.blog{
+    text-align: center;
+    position: relative;
+}
+
+
+
+.blog::before{
+    @include mq("md"){
+    content: "";
+    position: absolute;
+    
+    background-image: url(../images/common/blog-pc.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+ 
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 60%;
+    width: 100%;
+    }
+}
+
+.blog::after{
+    @include mq("md"){
+    content: "";
+    position: absolute;
+    
+    background-image: url(../images/common/sakana1.png);
+    // background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+ 
+    top: rem(24);
+    left: rem(100);
+    z-index: 1;
+    height: rem(201);
+    width: rem(437);
+    }
+}
+
+
+
+
+
+
+.blog__cards{
+    // display: inline-block;
+  max-width: rem(333);
+    margin-top: rem(24);
+    margin-left: auto;
+        margin-right: auto;
+        
+
+    @include mq("md"){
+   
+        width: 100%;
+        display: flex;
+        margin-top: rem(76);
+        margin-left: auto;
+        margin-right: auto;
+        justify-content: center;
+        padding-left: rem(20);
+        padding-right: rem(20);
+        }
+}
+
+
+.blog__tittle{
+
+    @include mq("md"){
+        margin-top: rem(100);
+        
+    }
+
+}
+
+
+.blog__card:not(:last-child) {
+    @include mq("md"){
+        
+        
+    
+        
+   margin-right: rem(40);}
+}
+
+.blog__card:not(:first-child) {
+    margin-top: rem(40);
+    @include mq("md"){
+        margin-top: rem(0);
+        
+    
+        }
+}
+
+.blog__button{
+    margin-top: rem(40);
+    // display: inline-block;
+    @include mq("md"){
+        margin-top: rem(80);
+        
+    
+        }
+}

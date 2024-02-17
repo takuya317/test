@@ -1,0 +1,156 @@
+
+@use "global" as *;
+
+.price{
+    height: rem(1263);
+    background-color: rgba(221, 240, 241, 1);
+    text-align: center;
+    @include mq("md"){
+        height: rem(1190);
+    }
+}
+
+.price__tittle{
+
+margin-top: rem(80);
+@include mq("md"){
+    padding-top: rem(22);
+}
+
+}
+
+.price__inner{
+    padding-left: rem(15);
+    padding-right: rem(15);
+    padding-top: rem(24);
+
+    @include mq("md"){
+        position: relative;
+        padding-left: auto;
+        padding-right: auto;
+        padding-top: rem(37);
+        display: flex;
+        gap: rem(93);
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+}
+
+.price__inner::before{
+    @include mq("md"){
+    content: "";
+    position: absolute;
+    
+    background-image: url(../images/common/sakana3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    // display: inline-block;
+        
+    bottom: -23%;
+    margin-right: rem(800);
+    margin-left: rem(5);
+    // margin-left: rem(-620);
+    z-index: 1000;
+    width: rem(437);
+    height: rem(201);
+    }
+}
+
+
+
+.price__topic{
+    margin-top: rem(40);
+    padding-bottom: rem(3);
+    text-align: left;
+    color: var(--green, #0D2936);
+font-family: "Noto Sans JP";
+font-size: rem(16);
+font-style: normal;
+font-weight: 700;
+line-height: 1.5; /* 150% */
+border-bottom: rem(1) solid var(--greenaccent, #408F95);
+@include mq("md"){
+ 
+  margin-top: rem(0);
+
+    }
+
+}
+
+.price__wrap{
+    color: var(--green, #0D2936);
+font-family: "Noto Sans JP";
+font-size: rem(14);
+font-style: normal;
+font-weight: 400;
+line-height: 1.71429; /* 171.429% */
+margin-top: rem(8);
+    display: flex;
+    justify-content: space-between;
+
+    @include mq("md"){
+        font-size: rem(16);
+        line-height: 1.5; 
+    
+        }
+}
+
+
+
+.price__value{
+    letter-spacing: 0.001em;
+    text-align: right;
+}
+
+.price__button{
+    margin-top: rem(40);
+    @include mq("md"){
+       
+       margin-top: rem(80);
+     }
+
+}
+
+.price__container{
+    
+    @include mq("md"){
+       width: rem(492);
+    }
+
+}
+
+
+.price__spimg{
+    margin-top: rem(-1);
+    width: rem(345);
+    height: rem(227);
+    margin-left: auto  ;
+    margin-right: auto;
+    @include mq("md"){
+        display: none;
+
+    }
+
+}
+
+
+.price__pcimg{
+display: none;
+    @include mq("md"){
+        display: block;
+        width: rem(492);
+        height: rem(746);
+
+
+    }
+ 
+}
+
+.price__textes:not(:first-child){
+    @include mq("md"){
+
+        margin-top: rem(40);
+    }
+}

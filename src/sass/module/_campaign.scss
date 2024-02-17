@@ -1,0 +1,87 @@
+@use "global" as *;
+
+.campaign{
+    text-align: center;
+    position: relative;
+}
+
+.campaign__tittle{
+    margin-top: rem(40);
+    display: flex;
+    position: relative;
+    @include mq("md"){
+        margin-top: rem(121);
+    }
+    
+}
+
+
+.campaign__arrows{
+    display: none;
+    
+    @include mq("md"){
+       display: block;
+       display: flex;
+       position: absolute;
+       justify-content: space-between;
+       gap: rem(80);
+       margin-left: rem(100);
+        top: 15.5%;
+        right: 12.5%;
+      
+    }
+}
+
+.campaign__leftarrow img{
+    width: rem(80);
+    height: rem(80);
+}
+
+.campaign__rightarrow img{
+    width: rem(80);
+    height: rem(80);
+}
+
+
+
+
+
+.campaign__inner{
+// padding-left: rem(15);
+padding-top: rem(24);
+// padding-left: rem(15);
+
+}
+
+.campaign__slide{
+    margin-left: rem(15);
+    @include mq("md"){
+        margin-left: rem(180);
+    }
+}
+
+
+
+
+.campain__button{
+    margin-top: rem(40);
+   margin-right: rem(5);
+
+   @include mq("md"){
+    font-size: rem(80);
+    margin-top: rem(80);
+}
+
+}
+
+.campaign__card{
+    margin-bottom: rem(1);
+    @include mq("md"){
+        margin-top: rem(10);
+        margin-bottom: rem(0);
+        
+    }
+}
+
+
+

@@ -1,19 +1,42 @@
 @use "global" as *;
 
 .snses{
+    display: flex;
+    @include mq("md"){
+        padding-left: rem(40);
+        padding-top: rem(40);
+    }
+
     
 }
 
 .snses__facebooklogo{
- 
-}
-
-.sns__instagramlogo{
-
+    padding-right: rem(16);
 }
 
 .snses__facebooklogo img{
-    width: 100px;
-    height: 100px;
+    width: rem(24);
+    height: rem(24);
+
+    @include mq("md"){
+        width: rem(32);
+        height: rem(32);
+    }
+   
  
 }
+
+
+.snses__instagramlogo img
+{
+    width: rem(24);
+    height: rem(24);
+    @include mq("md"){
+        width: rem(32);
+        height: rem(32);
+    }
+
+}
+
+
+
