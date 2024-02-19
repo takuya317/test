@@ -26,8 +26,8 @@ margin-top: rem(80);
 
     @include mq("md"){
         position: relative;
-        padding-left: auto;
-        padding-right: auto;
+        // padding-left: auto;
+        // padding-right: auto;
         padding-top: rem(37);
         display: flex;
         gap: rem(93);
