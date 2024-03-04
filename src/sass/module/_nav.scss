@@ -2,7 +2,7 @@
 
 .nav{
     display: flex;
-    transition: opacity 0.5s ease;
+    transition: opacity 1s ease;
     opacity: 1;
   
     
@@ -87,6 +87,6 @@
 
 
 .nav.is-active{
-    display: none;
+    // display: none;
     opacity: 0;
 }
