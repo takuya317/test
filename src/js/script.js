@@ -9,8 +9,10 @@ $(".humburger").click(function(){
 
     if ($(this).hasClass("is-active")) {
       $("html,body").css("overflow", "hidden");
+      $(".campaign").css("z-index", 0);
   } else {
       $("html,body").css("overflow", "");
+      $(".campaign").css("z-index", 9000);
   }
 });
 
