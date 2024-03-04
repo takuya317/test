@@ -1,9 +1,9 @@
 @use "global" as *;
 
-.swiper-slide:not(:last-child){
-    margin-right: rem(24);
+.swiper-slide:not(:first-child){
+    margin-left: rem(24);
     @include mq("md"){
-        margin-right: rem(40);
+        margin-left: rem(40);
     }
 
 }

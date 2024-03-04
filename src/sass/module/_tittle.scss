@@ -3,7 +3,7 @@
 .tittle{
     display: inline-block;
     text-align: center;
-    width: rem(281);
+   
     text-align: center;
     padding: 0 rem(42);
   
@@ -35,7 +35,7 @@ font-style: normal;
 font-weight: 400;
 line-height: rem(18); /* 150% */
 margin-top: rem(4);
-margin-bottom: rem(4);
+padding-bottom: rem(4);
 color: rgba(64, 143, 149, 1);
 
 @include mq("md"){

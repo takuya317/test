@@ -33,12 +33,11 @@ font-size: rem(40);
 font-style: normal;
 font-weight: 400;
 line-height: normal;
-letter-spacing: rem(21.6);
+letter-spacing:0.54em ;
 padding-bottom: rem(5);
 
 @include mq("md"){
     font-size: rem(80);
-    letter-spacing: rem(43.2);
     padding-bottom: rem(0);
 }
 }

@@ -1,20 +1,20 @@
 @use "global" as *;
 
-.itemsC__item:first-child{
-    margin-bottom: rem(36);
+.itemsC__item:not(:first-child){
+    // margin-top:  rem(40);
 }
 
-.itemsC__item:nth-child(2){
-    margin-bottom: rem(40);
-    @include mq("md"){
-    margin-bottom: rem(30);
-    }
+.itemsC__item{
+    text-indent: -1.5em;
+    padding-left: rem(24);
+    line-height: 1.125;
 }
 
-.itemsC__item:nth-child(3){
-    margin-bottom: rem(35);
-}
 
+.itemsC__item:not(:first-child){
+    margin-top:  rem(38);
+    // デザインカンプではrem24
+}
 
 .itemsC__item a{
     color: var(--White, #FFF);
@@ -25,8 +25,14 @@ font-weight: 400;
 line-height: rem(18); 
 }
 
+.itemsC__item a:hover{
+    opacity: 0.7;
+
+}
+
 .itemsC__item:first-child a{
     font-weight: 700;
+   
 }
 
 .itemsC__item:nth-child(2) a{
@@ -36,26 +42,10 @@ line-height: rem(18);
 
 
 
-.itemsC__item  a::before{
-content: url('/assets/images/common/hitode.svg'); 
-width: rem(18);
-height: rem(18);
-margin-right:rem(4);
-}
 
 
 
 
-    .itemsC__item a span:last-child{
-        padding-left: rem(24);
-       display: block;
-       line-height: 0.7;
-    
-        @include mq("md"){
-            padding-left: 0;
-            display: inline-block;
-        }
-    }
 
 .itemsC__pc{
    
@@ -66,3 +56,18 @@ margin-right:rem(4);
     }
 }
 
+.itemsC__img{
+    content: url(../images/common/hitode.jpg);
+    height: 1.125rem;
+    vertical-align: middle;
+    width: 1.125rem;
+   
+    
+}
+
+.itemsC__br{
+    @include mq("md"){
+      display: none;
+        
+    }
+}

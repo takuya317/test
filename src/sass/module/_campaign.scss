@@ -3,6 +3,8 @@
 .campaign{
     text-align: center;
     position: relative;
+    overflow: hidden;
+    
 }
 
 .campaign__tittle{
@@ -28,7 +30,7 @@
        margin-left: rem(100);
         top: 15.5%;
         right: 12.5%;
-      
+     
     }
 }
 
@@ -37,26 +39,47 @@
     height: rem(80);
 }
 
+.campaign__leftarrow img:hover{
+opacity: 0.7;
+cursor: pointer;
+}
+
+
 .campaign__rightarrow img{
     width: rem(80);
     height: rem(80);
 }
 
-
+.campaign__rightarrow img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    }
 
 
 
 .campaign__inner{
-// padding-left: rem(15);
-padding-top: rem(24);
-// padding-left: rem(15);
-
 }
 
-.campaign__slide{
-    margin-left: rem(15);
+
+.campaign__cards{
+    padding-top: rem(24);
+    
     @include mq("md"){
-        margin-left: rem(180);
+    margin-top: rem(10);
+    }
+    
+}
+
+
+
+
+
+.campaign__slide{
+    padding-bottom: rem(4);
+    @include mq("md"){
+        margin-right: calc(50% - 50vw);
+        margin-top: rem(4);
+        padding-bottom: rem(4);
     }
 }
 
@@ -64,21 +87,21 @@ padding-top: rem(24);
 
 
 .campain__button{
-    margin-top: rem(40);
-   margin-right: rem(5);
+    margin-top: rem(35);
+ 
 
    @include mq("md"){
     font-size: rem(80);
-    margin-top: rem(80);
+    margin-top: rem(70);
 }
 
 }
 
 .campaign__card{
-    margin-bottom: rem(1);
+
     @include mq("md"){
-        margin-top: rem(10);
-        margin-bottom: rem(0);
+        
+     
         
     }
 }

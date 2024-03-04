@@ -2,25 +2,26 @@
 
 .contact{
     text-align: center;
+   
 }
 
 
 .contact__inner{
     position: relative;
-    max-width: rem(375);
-    padding-left: rem(30);
-    padding-right: rem(30);
+    max-width: rem(600);
+    padding-left: rem(25);
+    padding-right: rem(25);
     margin-left: auto;
     margin-right: auto;
 
     @include mq("md"){
-        width: rem(1080);
+      
         height: rem(415);
         background: #FFF;
         box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.25);
-        margin-left: auto;
-        margin-right: auto;
-        padding-left: rem(50);
+        
+        padding-left: rem(0);
+    padding-right: rem(0);
         display: flex;
         justify-content: space-between;
         padding-bottom: rem(80);
@@ -32,17 +33,20 @@
 .contact__textes{
     
     margin-top: rem(9);
-    padding-top: rem(4);
+    padding-top: rem(5);
     font-family: "Noto Sans JP";
 
-
+    @include mq("md"){
+        margin-top: rem(0);
+        padding-top: rem(0);
+    }
 
 }
 
 .contact__textes p{
     margin-top: rem(4);
     @include mq("md"){
-        margin-top: rem(6);
+        margin-top: rem(4);
       }
 
 }
@@ -65,18 +69,27 @@
 
 }
 
+.contact__subinner{
+    // padding-right: rem(25);
+    // padding-left: rem(25);
+    @include mq("md"){
+        padding-left: rem(50);
+        
+    }
+
+}
+
 
 .contact__wrap{
-
-    padding-left: rem(10);
-    padding-right: rem(10);
+    margin-top: rem(2);
+    // width: 100%;
     border-top: 1px solid var(--greenaccent, #408F95);
     @include mq("md"){
-
+        padding-top:rem(20) ;
         display: flex;
         padding-left: rem(0);
         padding-right: rem(0);
-       
+        margin-top: rem(0);
 
 
     }
@@ -95,8 +108,9 @@
 
 
 .cotact__rightwrap{
+    
     @include mq("md"){
-        padding-right: rem(80);
+        padding-right: rem(115);
     }
 
 }
@@ -149,9 +163,11 @@
     font-style: normal;
     font-weight: 400;
     line-height: 1; /* 100% */
-   
+  
+  
     @include mq("md"){
         margin-top: rem(20);
+        margin-left: rem(20);
     }
  
 }
@@ -186,19 +202,23 @@ padding-top: rem(8);
 
 .contact__button{
     margin-top: rem(40);
+
+    @include mq("md"){
+        margin-left: rem(20);
+    }
 }
 
 .contact__img3{
     width:rem(109) ;
     height: rem(50);
     position: absolute;
-    right: 4%;
+    right: 0%;
     top: -4%;
 
     @include mq("md"){
        width: rem(301);
        height: rem(138);
-       right: -12%;
+       right: calc(50% - min(48.7vw,42rem));
        top: -9%;
       }
 }
@@ -206,22 +226,20 @@ padding-top: rem(8);
 
 .contact__map{
     position: relative;
-
-}
-
-.contact__map::before{
-    content: "";
-    display: block;
-    padding-top: 67.14285%;
+    margin: auto;
+    margin-top: rem(12);
+    @include mq("md"){
+    margin-top: rem(0);
+    }
 
 }
 
 .contact__map iframe{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     width: 100%;
     height: 100%;
     object-fit: cover;
+
+    // @include mq("md"){
+    //     margin-top: ;
+    // }
 }

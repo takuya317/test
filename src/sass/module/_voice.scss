@@ -9,19 +9,16 @@
     @include mq("md"){
     content: "";
     position: absolute;
-    
     background-image: url(../images/common/tatu.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
- 
     bottom: -11%;
     right: 12.5%;
     z-index: 9999;
     height: rem(162);
     width: rem(71);
-
     }
 }
 
@@ -29,13 +26,10 @@
     @include mq("md"){
     content: "";
     position: absolute;
-    
     background-image: url(../images/common/sakana2.png);
-    // background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
     display: inline-block;
- 
     top: -19%;
     left: rem(100);
     z-index: 1;
@@ -49,58 +43,37 @@
 
 }
 
-.voice__outer{
+.voice__inner{
    display: inline-block;
-    max-width: rem(375);
-    @include mq("md"){   
-        max-width: rem(1120);
-        padding-left: rem(20);
-        padding-right: rem(20);
+    max-width: rem(600);
+    @include mq("md"){         
     }
 }
 
 
 .voice__cards{
   
-
-    // padding-left: rem(15);
-    // padding-right: rem(15);
-    
+    width: 100%;
 
     @include mq("md"){
         margin-top: rem(38);
-        margin-left:auto;
-        margin-right: auto;
+       
         gap: rem(40);
-        justify-content: center;
+        justify-content: space-between;
         display: flex;
+        flex-wrap: wrap;
         }
 }
 
 .voice__card{
     margin-top: rem(40);
-    
-  
     padding: rem(15) rem(16) rem(24) rem(16);
     @include mq("md"){
-
         padding: rem(15) rem(24) rem(24) rem(24);
         margin-top: rem(-11);
-
+        width: calc((100% - rem(40)) / 2);
     }
 }
-
-
-
-.voice-card__inner{
-    border-bottom: rem(1) solid var(--greenaccent, #408F95);
-    width: rem(149);
-    margin-right: rem(13);
-    @include mq("md"){
-      padding-bottom: rem(4);
-    }
-}
-
 
 
 .voice__button{

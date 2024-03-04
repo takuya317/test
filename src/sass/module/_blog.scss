@@ -4,8 +4,15 @@
 .blog{
     text-align: center;
     position: relative;
+    // overflow: hidden;
 }
 
+.blog__card{
+    width: 100%;
+    @include mq("md"){
+    width: calc((100% - rem(80)) / 3);
+    }
+}
 
 
 .blog::before{
@@ -52,23 +59,20 @@
 
 
 .blog__cards{
-    // display: inline-block;
-  max-width: rem(333);
+   
+   
     margin-top: rem(24);
-    margin-left: auto;
-        margin-right: auto;
+    width: 100%;
+    // padding: rem(16) rem(16) rem(24) rem(16);
         
 
     @include mq("md"){
-   
-        width: 100%;
+       
         display: flex;
         margin-top: rem(76);
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
-        padding-left: rem(20);
-        padding-right: rem(20);
+        // padding: 0;
+        justify-content: space-between;
+        flex-wrap: wrap;
         }
 }
 
@@ -83,14 +87,8 @@
 }
 
 
-.blog__card:not(:last-child) {
-    @include mq("md"){
-        
-        
-    
-        
-   margin-right: rem(40);}
-}
+
+
 
 .blog__card:not(:first-child) {
     margin-top: rem(40);
@@ -98,6 +96,13 @@
         margin-top: rem(0);
         
     
+        }
+}
+
+.blog__card:nth-child(n+4){
+    @include mq("md"){
+        margin-top: rem(40);
+        
         }
 }
 
