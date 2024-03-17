@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.tittle{
+.section-header{
     display: inline-block;
     text-align: center;
    
@@ -9,9 +9,9 @@
   
 }
 
-// leter-space? irukamo
 
-.tittle__english{
+
+.section-header__engtittle{
     color:black;
     font-family: "Gotu", sans-serif;
     font-size: rem(32);
@@ -27,7 +27,7 @@
 }
 
 
-.tittle__japanese{
+.section-header__jatittle{
 text-align: center;
 font-family: Noto Sans JP;
 font-size: rem(12);
@@ -45,6 +45,8 @@ color: rgba(64, 143, 149, 1);
 }
 
 
-.tittle__english::first-letter{
+.section-header__engtittle::first-letter{
     color: #408F95;
+    text-transform: uppercase;
+    
 }

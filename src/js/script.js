@@ -1,24 +1,39 @@
 
 // ドロワー部分
-$(".humburger").click(function(){
-   
-    $(this).toggleClass("is-active");
-    $("html").toggleClass("is-fixed");
-    $(".nav").toggleClass("is-active");
-    $(".header").toggleClass("is-active");
+$(".js-humburger").click(function(){
 
-    if ($(this).hasClass("is-active")) {
-      $("html,body").css("overflow", "hidden");
-      $(".campaign").css("z-index", 0);
-  } else {
+
+    if ($(".js-humburger").hasClass('is-active')) {
+      $('.js-humburger').removeClass("is-active");
+      $(".js-sp-nav").fadeOut();
+      $(".header").removeClass("is-active");
+      // $("html").toggleClass("is-fixed");
       $("html,body").css("overflow", "");
-      $(".campaign").css("z-index", 9000);
+      
+  } else {
+    $('.js-humburger').addClass("is-active");
+    $(".js-sp-nav").fadeIn();
+    $(".header").addClass("is-active");
+    
+     
+      $("html,body").css("overflow", "hidden");
   }
+
+  $(window).on('resize', function () {
+    if (window.matchMedia("(min-width: 768px)").matches) {
+      $('.js-humburger').removeClass("is-active");
+      $(".js-sp-nav").fadeOut();
+      $(".header").removeClass("is-active");
+      $("html,body").css("overflow", "");
+
+    }
+  });
+
 });
 
 // mv部分のスワイパー
 
-var mv_swiper = new Swiper(".mv__swiper", {
+var mv_swiper = new Swiper(".js-mv-swiper", {
     loop: true,
     speed: 2000,
     effect: "fade",
@@ -34,20 +49,16 @@ var mv_swiper = new Swiper(".mv__swiper", {
 
 
 
-
-
-
-
-
-// campaign部分のスワイパー,とりあえずはOK
+// campaign部分のスワイパー,
 
 $(function () {
-    const swiper = new Swiper('.campaign__slide', {
+    const swiper = new Swiper('.js-campaign-swiper', {
         loop:true,
         loopAdditionalSlides: 4,
         loopedSlides: 8,
         speed: 3000,
-    
+        spaceBetween:24,
+        width:280,
         autoplay:{
             delay:1500,
             // 4s
@@ -59,19 +70,15 @@ $(function () {
         // centeredSlides:false,
 
         navigation: { 
-            nextEl: '.campaign__rightarrow img',
-            prevEl: '.campaign__leftarrow img',
+            nextEl: '.js-campaign__rightarrow img',
+            prevEl: '.js-campaign__leftarrow img',
         }, 
        
         breakpoints:{
-            0:{
-                slidesPerView:'auto',
-                spaceBetween:0,
-                // 1.339
-            },
-            768:{
-                slidesPerView:'auto',
-                spaceBetween:0,
+         
+            768:{           
+                spaceBetween:40,
+                width:333
             },
         }
       });    
@@ -82,18 +89,18 @@ $(function () {
 
 
 //要素の取得とスピードの設定
-var box = $('.colorbox'),
+var box = $(".js-colorbox"),
     speed = 700;  
  
 //.colorboxの付いた全ての要素に対して下記の処理を行う
 box.each(function(){
-    $(this).append('<div class="colorbox__color"></div>')
-    var color = $(this).find($('.colorbox__color')),
-    image = $(this).find('img');
+    $(this).append('<div class="color"></div>')
+    var color = $(this).find($(".color")),
+    image = $(this).find("img");
     var counter = 0;
  
-    image.css('opacity','0');
-    color.css('width','0%');
+    image.css("opacity","0");
+    color.css("width","0%");
     
 
 
@@ -101,7 +108,7 @@ box.each(function(){
         if(counter == 0){
 　　　　　$(this).delay(200).animate({'width':'100%'},speed,function(){
                    image.css('opacity','1');
-                   $(this).css({'left':'0' , 'right':'auto'});
+                   $(this).css({left:"auto" , right:"auto"});
                    $(this).animate({'width':'0%'},speed);
                 })
             counter = 1;
@@ -126,11 +133,13 @@ box.each(function(){
     pageTop.click(function () {
       $('body,html').animate({
         scrollTop: 0 // 上から0pxの位置に戻る
-      }, 500 // 500ミリ秒かけて戻る
-      );
+      }, 500, // 500ミリ秒かけて戻る
+      'swing');
 
       return false;
     });
   });
 
+
+  
   

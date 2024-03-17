@@ -8,8 +8,8 @@
   left: 0;
   right: 0;
   width: 100%;
-  z-index: 1000;
-  transition: opacity 0.3s ease;
+  z-index: 9000;
+
   @include mq("md"){
    height: rem(90);
 }
@@ -35,15 +35,11 @@
 .header__logo img{
     width:rem(102) ;
     height: rem(38);
-
+    
     @include mq("md"){
       width:rem(133) ;
     height: rem(50);
   }
-}
-
-.header__drawer{
-  
 }
 
 
@@ -67,17 +63,12 @@
 
 }
 
-.header__pcnav{
+.header__pc-nav{
   height: inherit;
 }
 
 
-.header__wrap{
-  display: flex;
-  height: inherit;
- 
-  
-}
+
 
 .header__card{
   margin-left: rem(40);
@@ -90,4 +81,8 @@
   
   justify-content: center;
 
+}
+
+.header__sp-nav{
+  display: flex;
 }

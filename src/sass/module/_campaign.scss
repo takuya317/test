@@ -4,16 +4,13 @@
     text-align: center;
     position: relative;
     overflow: hidden;
-    z-index: 8000;
 }
 
 .campaign__tittle{
-    margin-top: rem(40);
+   
     display: flex;
     position: relative;
-    @include mq("md"){
-        margin-top: rem(121);
-    }
+    
     
 }
 
@@ -28,7 +25,7 @@
        justify-content: space-between;
        gap: rem(80);
        margin-left: rem(100);
-        top: 15.5%;
+        top: 0%;
         right: 12.5%;
      
     }
@@ -78,7 +75,7 @@ cursor: pointer;
     padding-bottom: rem(4);
     @include mq("md"){
         margin-right: calc(50% - 50vw);
-        margin-top: rem(4);
+        margin-top: rem(0);
         padding-bottom: rem(4);
     }
 }
@@ -87,12 +84,12 @@ cursor: pointer;
 
 
 .campain__button{
-    margin-top: rem(35);
+    margin-top: rem(34);
  
 
    @include mq("md"){
     font-size: rem(80);
-    margin-top: rem(70);
+    margin-top: rem(78);
 }
 
 }

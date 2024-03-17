@@ -1,6 +1,0 @@
-@use "global" as *;
-
-.nav--leftinner{
-    margin-left: rem(-14);
-    @include mq("md"){margin-left: rem(0);}
-}

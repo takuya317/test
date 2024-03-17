@@ -3,15 +3,15 @@
 .snses{
     display: flex;
     @include mq("md"){
-        padding-left: rem(40);
-        padding-top: rem(40);
+        gap: rem(16);
+        padding-top: rem(37);
     }
 
     
 }
 
 .snses__facebooklogo{
-    padding-right: rem(16);
+    // padding-right: rem(16);
 }
 
 .snses__facebooklogo img{

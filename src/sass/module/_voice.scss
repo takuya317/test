@@ -5,7 +5,7 @@
     position: relative;
 }
 
-.voice::before{
+.voice__inner::before{
     @include mq("md"){
     content: "";
     position: absolute;
@@ -15,14 +15,14 @@
     background-size: contain;
     display: inline-block;
     bottom: -11%;
-    right: 12.5%;
-    z-index: 9999;
+    right: calc(59% - min(54vw,40rem));
+    z-index: 1;
     height: rem(162);
     width: rem(71);
     }
 }
 
-.voice::after{
+.voice__inner::after{
     @include mq("md"){
     content: "";
     position: absolute;
@@ -31,7 +31,7 @@
     background-size: contain;
     display: inline-block;
     top: -19%;
-    left: rem(100);
+    left: calc(51.5% - min(48vw,40rem));
     z-index: 1;
     height: rem(138);
     width: rem(301);
@@ -39,14 +39,17 @@
 
 }
 
+
+
 .voice__tittle{
 
 }
 
 .voice__inner{
-   display: inline-block;
+//    display: inline-block;
     max-width: rem(600);
-    @include mq("md"){         
+    @include mq("md"){   
+        position: relative;      
     }
 }
 
@@ -77,7 +80,7 @@
 
 
 .voice__button{
-    margin-top: rem(40);
+    margin-top: rem(38);
 
     @include mq("md"){
         margin-top: rem(80);

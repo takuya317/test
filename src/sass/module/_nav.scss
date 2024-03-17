@@ -4,7 +4,7 @@
     display: flex;
     transition: opacity 1s ease;
     opacity: 1;
-  
+    visibility: visible;
     
 }
 
@@ -87,6 +87,7 @@
 
 
 .nav.is-active{
-    // display: none;
+  
     opacity: 0;
+    visibility: hidden;
 }
