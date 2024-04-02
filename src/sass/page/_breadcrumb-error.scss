@@ -1,0 +1,37 @@
+@use "global" as *;
+
+.breadcrumb-error{
+
+}
+
+.breadcrumb-error__inner{
+    padding-top: rem(8);
+    color: var(--green,  white);
+    font-family: "Noto Sans JP";
+    font-size: rem(14);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.breadcrumb-error__top{
+ 
+}
+
+.breadcrumb-error__current{
+    margin-left: rem(16);
+    position: relative;
+}
+
+.breadcrumb-error__current::before{
+    border-bottom: 1px solid white;
+    border-right: 1px solid  white;
+    content: "";
+    height: 0.375rem;
+    left: -50%;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+    width: 0.375rem;
+}

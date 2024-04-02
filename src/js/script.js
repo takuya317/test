@@ -141,5 +141,86 @@ box.each(function(){
   });
 
 
+  // タブ
+  jQuery(function ($) {
+    $('.js-tab-item').on('click', function () {
+        $('.js-tab-item').removeClass('is-active');
+        $('.js-sub-campaign-card').addClass('is-active');
+        $(this).addClass('is-active');
+        var number = $(this).data("number");
+
+        if (number === "tab01") {
+        
+          $('.js-sub-campaign-card').removeClass('is-active');
+        }else{
+          
+        $('#' + number).removeClass('is-active');
+        }
+
+    });
+});
+
+
+// ページネーション
+jQuery(function ($) {
+  $('.js-pagenation-number').on('click', function () {
+      $('.js-pagenation-number').removeClass('is-active');
+     
+      $(this).addClass('is-active');
+     
+  });
+});
   
+  // informationページのタブ
+  jQuery(function ($) {
+    $('.js-information-page__item').on('click', function () {
+        $('.js-information-page__item').removeClass('is-active');
+
+        $('.js-information-page__card').addClass('is-active');
+        $(this).addClass('is-active');
+        var number = $(this).data("number");
+
+        
+          
+        $('#' + number).removeClass('is-active');
+    });
+});
+
+
+// モーダルのページ
+
+
+jQuery(function ($) {
+  $(".js-modal-open").on("click", function (e) {
+          e.preventDefault();
+          var target = $(this).data("target");
+          var modal  = document.getElementById(target);
+          $(modal).fadeIn();
+          $("html,body").css("overflow", "hidden");
+      });
+  });
   
+
+  $(".js-modal").on("click", function () {
+      $(".js-modal").fadeOut();
+      $("html,body").css("overflow", "initial");
+  });
+
+
+// アコーディング
+  jQuery(function ($) {
+    $('.js-faq-question').on('click', function () {
+        $(this).next().slideToggle();
+        $(this).toggleClass('is-close');
+    });
+});
+
+
+// toggle triangle
+jQuery(function ($) {
+  $('.js-two-colums__year').on('click', function () {
+    $(this).toggleClass('is-active');
+    
+
+  });
+});

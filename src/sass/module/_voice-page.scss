@@ -1,0 +1,106 @@
+@use "global" as *;
+
+
+
+.voice-page{
+    text-align: center;
+    position: relative;
+   
+}
+
+.voice-page__tab{
+
+}
+
+
+.voice-page__inner::after{
+   
+    content: "";
+    position: absolute;
+    background-image: url(../images/common/sub-campaign-sakana.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    top: -0.8%;
+    left: calc(52% - min(48vw,40rem));
+   
+    height: rem(55);
+    width: rem(120);
+   z-index: 1;
+   @include mq("md"){
+    height: rem(138);
+    width: rem(301);
+    top: -3.5%;
+   }
+}
+
+
+
+
+
+
+
+.voice-page__tittle{
+    display: flex;
+    position: relative;   
+}
+
+
+
+
+
+.voice-page__inner{
+    position: relative;
+}
+
+
+.voice-page__cards{
+   
+    width: 100%;
+
+    @include mq("md"){
+        margin-top: rem(52);
+       
+        column-gap: rem(40);
+        row-gap: rem(85);
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        }
+    
+}
+
+
+
+
+.voice-page__card{
+    @include mq("md"){
+        // width: 40%;
+     
+        
+    }
+}
+
+
+
+
+// .voice-page__card:not(:first-child){
+//     margin-top: rem(39);
+
+
+
+//     @include mq("md"){
+        
+//         margin-top: rem(0);
+        
+//     }
+// }
+
+
+.voice-page__pagenation{
+    margin-top: rem(77);
+    @include mq("md"){
+        margin-top: rem(80);
+    }
+
+}

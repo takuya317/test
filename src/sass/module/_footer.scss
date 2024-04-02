@@ -37,25 +37,17 @@
     margin-left: auto;
     margin-right: auto;
     @include mq("md"){
-        
-      
         max-width: rem(1400);
-        
-      
- 
- 
     }
 }
 
 .footer__nav{
-   margin-top: rem(4);
-   gap: rem(40);
+   margin-top: rem(8);
+   gap: rem(20);
     justify-content: center;
     @include mq("md"){
         margin-top: rem(0);
-       gap: rem(80);
-       
-   
+       gap: rem(38);
     }
 }
 

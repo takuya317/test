@@ -60,7 +60,7 @@
 
   
     
-    z-index: 1000;
+    z-index: 100;
     width: rem(437);
     height: rem(201);
     }
@@ -115,7 +115,7 @@ padding-top: rem(8);
     text-align: right;
 }
 
-.price__button{
+.price__btn{
     margin-top: rem(40);
     @include mq("md"){
        

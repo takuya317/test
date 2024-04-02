@@ -1,0 +1,182 @@
+@use "global" as *;
+
+.page-price{
+
+}
+
+.page-price__inner{
+    position: relative;
+}
+
+.page-price__inner::before{
+
+        content: "";
+        position: absolute;
+        background-image: url(../images/common/sakana2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        top: -2.1%;
+        left: calc(51.5% - min(48vw,40rem));
+        z-index: 1;
+        height: rem(55);
+        width: rem(120);
+
+        @include mq("md"){
+            height: rem(138);
+            width: rem(301);
+            top: -6.5%;
+
+        }
+}
+
+.page-price__inner.inner{
+    @include mq("md"){
+    width: rem(750);
+    }
+}
+
+.page-price__items{
+    display: flex;
+    flex-direction: column;
+    gap: rem(40);
+
+    @include mq("md"){
+        gap: rem(80);
+    }
+}
+
+
+.page-price__item{
+    text-align: center;
+    border: rem(1) solid var(--greenaccent, #408F95);
+    background: var(--White, #FFF);
+
+    @include mq("md"){
+        display: flex;
+    }
+}
+
+.page-price__wrap{
+    @include mq("md"){
+    width: 71.7%;
+    }
+}
+
+
+.page-price__head{
+ display: flex;
+ border: rem(1) solid var(--greenaccent, #408F95);
+    background: var(--greenaccent, #408F95);  
+    padding-top: rem(8);
+    padding-bottom: rem(5);
+    justify-content: center;
+    gap: rem(8);
+
+       @include mq("md"){
+        width: 28.3%;
+        flex-direction: column-reverse;
+        padding: 0;
+        align-items: center;
+    }
+
+}
+
+.page-price__head h2{
+    color: #FFF;
+    font-family: "Noto Sans JP";
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5; /* 150% */
+}
+
+
+.page-price__img{
+    object-fit: cover;
+    width: rem(24);
+    height: rem(24); 
+    @include mq("md"){
+       width: rem(64);
+       height: rem(64);
+    }
+}
+
+.page-price__img img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.page-price__table{
+    display: flex;
+    @include mq("md"){
+        // display: block;
+        // height: calc((1/3)*100);
+    }  
+}
+
+.page-price__goods{
+    color: #0D2936;
+text-align: center;
+font-family: "Noto Sans JP";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5 /* 150% */;
+border-right: rem(1) solid var(--greenaccent, #408F95);
+background: var(--White, #FFF);
+width: 69.3%;
+display: flex;
+padding-top: rem(7);
+padding-bottom: rem(7);
+justify-content: center;
+
+
+@include mq("md"){
+    padding-top: rem(18);
+    padding-bottom: rem(18);
+    justify-content: left;
+    padding-left: rem(15);
+}
+}
+
+
+.page-price__table:not(first-child){
+
+border-top: rem(1) solid var(--greenaccent, #408F95);
+   
+}
+
+
+.page-price__price{
+    color: var(--green, #0D2936);
+text-align: right;
+font-family: "Noto Sans JP";
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 150% */
+width: 30.7%;
+text-align: center;
+padding-top: rem(18);
+padding-left: rem(16);
+
+@include mq("md"){
+    text-align: right;
+    padding-right: rem(16);
+}
+
+}
+
+.page-price__br{
+    display: block;
+    @include mq("md"){
+        display: none;     
+     }
+}
+
+
+.page-price__reg{
+    padding-top: rem(18);
+    padding-bottom: rem(18);
+}

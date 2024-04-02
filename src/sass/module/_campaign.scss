@@ -1,17 +1,14 @@
 @use "global" as *;
 
 .campaign{
-    text-align: center;
+    // text-align: center;
     position: relative;
     overflow: hidden;
 }
 
 .campaign__tittle{
-   
     display: flex;
-    position: relative;
-    
-    
+    position: relative;   
 }
 
 
@@ -27,6 +24,7 @@
        margin-left: rem(100);
         top: 0%;
         right: 12.5%;
+        z-index: 2;
      
     }
 }
@@ -83,12 +81,12 @@ cursor: pointer;
 
 
 
-.campain__button{
+.campain__btn{
     margin-top: rem(34);
- 
-
+ text-align: center;
+padding-bottom: rem(10);
    @include mq("md"){
-    font-size: rem(80);
+   
     margin-top: rem(78);
 }
 
@@ -96,6 +94,10 @@ cursor: pointer;
 
 .campaign__card{
 
+    display: flex;
+    flex-direction: column;
+    // flex-grow: 1;
+    // justify-content: space-between;
     @include mq("md"){
         
      

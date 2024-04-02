@@ -2,7 +2,7 @@
 
 .information{
     text-align: center;
-   padding-bottom: rem(82);
+   padding-bottom: rem(84);
     background: var(--green2, #DDF0F1);
     
     padding-top: rem(80);
@@ -107,7 +107,7 @@ letter-spacing: 0.005em;
 }
 }
 
-.information__button{
+.information__btn{
     margin-top: rem(38);
 
     @include mq("md"){

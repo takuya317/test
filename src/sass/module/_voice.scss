@@ -62,24 +62,24 @@
         margin-top: rem(38);
        
         gap: rem(40);
-        justify-content: space-between;
-        display: flex;
-        flex-wrap: wrap;
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        
         }
 }
 
 .voice__card{
     margin-top: rem(40);
-    padding: rem(15) rem(16) rem(24) rem(16);
+    padding: rem(15) rem(16) rem(23) rem(16);
     @include mq("md"){
         padding: rem(15) rem(24) rem(24) rem(24);
         margin-top: rem(-11);
-        width: calc((100% - rem(40)) / 2);
+        
     }
 }
 
 
-.voice__button{
+.voice__btn{
     margin-top: rem(38);
 
     @include mq("md"){

@@ -2,7 +2,7 @@
 
 .footer-nav{
     display: flex;
-     padding-left: rem(16);  
+    //  padding-left: rem(16);  
 
     @include mq("md"){  
         padding-left: rem(0);    
@@ -22,10 +22,24 @@
 
 
 .footer-nav__reg{
-    margin-top: rem(15);
-    text-indent: -1.5em;
+    margin-top: rem(16);
+    position: relative;
     font-weight: 700;
 }
+
+.footer-nav__reg::before{
+    background-image: url(../images/common/hitode.jpg);
+    background-size: contain;
+    content: "";
+    display: block;
+    height: rem(18);
+    left: rem(-4);
+    position: absolute;
+    top: rem(11);
+    width: rem(18);
+}
+
+
 
 .footer-nav a{
     display: block;
@@ -37,6 +51,8 @@ line-height: rem(18);
 transition: opacity 0.3s;
 padding-top: rem(12);
 padding-bottom: rem(12);
+padding-left: rem(18);
+
 }
 
 
@@ -82,14 +98,14 @@ padding-bottom: rem(12);
         display: flex;
         width: 50%;
         margin-top: rem(-6);
-       gap: rem(140);
+       gap: rem(126);
 
     }
 }
 
 .footer-nav__inner:first-child{
     @include mq("md"){
-        padding-left: rem(24);
+        // padding-left: rem(24);
     }
 }
 

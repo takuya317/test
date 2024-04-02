@@ -1,0 +1,235 @@
+@use "global" as *;
+
+
+
+.information-page{
+    text-align: center;
+    position: relative;
+   
+}
+
+.information-page__items{
+    display: flex;
+    justify-content: space-between;
+    // margin-top: rem(120);
+}
+
+.information-page__item{
+    position: relative;
+    color: var(--greenaccent, #408F95);
+text-align: center;
+font-family: "Noto Sans JP";
+font-size: rem(14);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+background: var(--green2, #DDF0F1);
+box-shadow: rem(2) rem(2) rem(4) rem(0) rgba(0, 0, 0, 0.25);
+padding: rem(10) rem(16);
+
+@include mq("md") {
+padding-top: rem(29);
+padding-right: rem(30);
+padding-bottom: rem(26);
+padding-left: rem(8);
+font-size: rem(24);
+width: rem(300);
+text-align: right;
+
+}
+}
+
+.information-page__item:first-child:before{
+    @include mq("md"){
+        content: "";
+        position: absolute;
+        
+        background-image: url(../images/common/kuzira1.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // display: inline-block;
+        // left: calc(50% - min(48vw,38.75rem));
+        bottom: 15%;
+        left: 10%;
+        z-index: 2;
+        width: rem(64);
+        height: rem(64);
+        }
+
+
+}
+
+.information-page__item:nth-child(2)::before{
+    @include mq("md"){
+        content: "";
+        position: absolute;
+        
+        background-image: url(../images/common/kuzira2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+        bottom: 15.3%;
+        left: 5.1%;
+        z-index: 2;
+        width: rem(64);
+        height: rem(64);
+        }
+
+
+}
+
+
+.information-page__item:last-child:before{
+    @include mq("md"){
+        content: "";
+        position: absolute;
+        
+        background-image: url(../images/common/kuzira3.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        // display: inline-block;
+        // left: calc(50% - min(48vw,38.75rem));
+        bottom: 15%;
+        left: 10%;
+        z-index: 2;
+        width: rem(64);
+        height: rem(64);
+        }
+
+
+}
+
+
+
+
+
+
+.information-page__item.is-active{
+    color: #FFF;
+    background: var(--greenaccent, #408F95);
+box-shadow: rem(2) rem(2) rem(4) rem(0) rgba(0, 0, 0, 0.25);
+}
+
+
+.information-page__inner{
+    position: relative;
+}
+
+.information-page__inner::after{
+   
+    content: "";
+    position: absolute;
+    background-image: url(../images/common/sub-campaign-sakana.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    top: -6%;
+    left: calc(52% - min(48vw,40rem));
+   
+    height: rem(55);
+    width: rem(120);
+   z-index: 1;
+   @include mq("md"){
+    height: rem(138);
+    width: rem(301);
+    top: -15%;
+   }
+}
+
+
+
+
+
+.information-page__cards{
+   
+    width: 100%;
+
+    @include mq("md"){
+        margin-top: rem(8);
+       
+        column-gap: rem(40);
+        row-gap: rem(85);
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+      
+        
+        }
+    
+}
+
+.information-page__wrap{
+    @include mq("md"){
+        width: 47.6%;
+        
+    }
+}
+
+
+.information-page__card{
+    margin-top: rem(16);
+    padding: rem(24);
+    text-align: left;
+    border: rem(1) solid var(--greenaccent, #408F95);
+    @include mq("md"){
+        // width: 40%;
+        display: flex;
+        align-items: center;
+        
+        gap: 4.8%;
+        
+    }
+}
+
+.information-page__card.is-active{
+    display: none;
+
+}
+
+
+.information-page__tittle{
+    padding-bottom: rem(8);
+    line-height: 1;
+    border-bottom: rem(1) solid var(--greenaccent, #408F95);
+    @include mq("md"){}
+}
+
+.information-page__text{
+    
+    padding-top: rem(8);
+    padding-bottom: rem(8);
+    color: #000;
+font-family: "Noto Sans JP";
+font-size: rem(16);
+font-style: normal;
+font-weight: 400;
+line-height: 1.5; /* 150% */
+    @include mq("md"){
+       letter-spacing: 0.021em;
+ 
+    }
+}
+
+.information-page__img{
+    @include mq("md"){
+        width: 47.6%;
+    }
+}
+
+.information-page__img img{
+    object-fit: cover;
+    aspect-ratio: 297/189;
+    @include mq("md"){
+        aspect-ratio:492/313 ;
+    }
+}
+
+.information-page__br{
+    display: block;
+    @include mq("md"){
+       display: none;
+    }
+}

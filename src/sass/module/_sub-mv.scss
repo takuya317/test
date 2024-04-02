@@ -1,0 +1,54 @@
+@use "global" as *;
+
+.sub-mv{
+    height: rem(460);
+    position: relative;
+    @include mq("md"){
+        height: rem(548);
+    }
+}
+
+.sub-mv__header{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+    @include mq("md"){
+        top: 59%;
+    }
+}
+
+.sub-mv__img{
+    aspect-ratio: 375/460;
+    object-fit: cover;
+    
+   
+    @include mq("md"){
+        aspect-ratio: 1440/548;
+    }
+}
+
+.sub-mv__img img{
+    height: 100%;
+    object-fit: cover;
+}
+
+.sub-mv__tittle{
+    color: #FFF;
+font-family: Lato;
+font-size: rem(40);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+white-space: nowrap;
+
+@include mq("md"){
+    color: #FFF;
+font-family: Lato;
+font-size: rem(80);
+font-style: normal;
+font-weight: 400;
+line-height: 1.25; /* 125% */
+}
+}

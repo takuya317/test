@@ -115,7 +115,7 @@
 //         }
 // }
 
-.blog__button{
+.blog__btn{
     margin-top: rem(40);
     // display: inline-block;
     @include mq("md"){
@@ -123,4 +123,11 @@
         
     
         }
+}
+
+.blog__card-pc{
+    display: none;
+    @include mq("md"){
+        display: block;
+    }
 }

@@ -1,153 +1,101 @@
 @use "global" as *;
 
-.button{
-    width:rem(206) ;
-    
-    display: inline-block;
-    line-height: 1;
-}
+@use "global" as *;
 
-.button__inner{
-    display: inline-block;
-    background-color: rgba(64, 143, 149, 1);
+.btn {
     position: relative;
+    display: inline-block;
+    font-size: rem(14);
+    font-family: $base-font-family;
+    font-weight: $regular;
+    color: $white;
     width: rem(202);
-    padding: rem(16) rem(40);
-   z-index: 3;
-    display: flex;
-    color: #FFF;
-    border: 1px solid rgba(64, 143, 149, 1);
+    background-color: $green;
+    line-height: 1;
+    padding: rem(19) rem(88) rem(19) rem(40);
+    border: rem(1) solid $green;
+    white-space: nowrap;
+    z-index: 1;
 }
 
-.button__inner:hover{
-    color: rgba(64, 143, 149, 1);
-}
 
-.button__inner::before{
-    content: "";
-    border: 1px solid rgba(64, 143, 149, 1);
+
+// ボタンの影
+.btn::before {
     position: absolute;
+    content: '';
+    border: rem(1) solid $green;
     width: 100%;
-    // height: 100%;
-    bottom: rem(-4);
-    left: rem(5);
+    max-width: rem(202);
+    height: rem(54);
+    left: rem(4);
     top: rem(4);
     z-index: -1;
 }
 
-
-
-
-
-
-.button__inner::after{
-    content: "";
-    background: #FFF;
+// ボタンの矢印
+.btn__arrow::before {
+    content: '';
+    /*絶対配置で下線の位置を決める*/
     position: absolute;
+    bottom: 48%;
+    right: 20%;
+    /*下線の形状*/
+    width: 20%;
+    height: rem(1);
+    background: $white;
+    // /*アニメーションの指定*/
+    // transition: all .3s;
+}
+
+.btn__arrow::after {
+    content: '';
+    /*絶対配置で矢印の位置を決める*/
+    position: absolute;
+    bottom: 54%;
+    right: 20%;
+    /*矢印の形状*/
+    width: 4%;
+    height: rem(1);
+    background: $white;
+    transform: rotate(40deg);
+    // /*アニメーションの指定*/
+    // transition: all .3s;
+}
+
+// ボタンのアニメーション
+.btn::after {
+    position: absolute;
+    content: '';
     top: 0;
     left: 0;
-    content: '';
-    width: 100%;
-    height: 100%;
-    transform: scale(0, 1);
-    transform-origin: left top;
-    transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+    bottom: 0;
+    width: 0;
+    display: block;
+    background-color: $white;
     z-index: -1;
+    transition: 0.2s;
 }
 
-.button__inner:hover::after{
-    transform: scale(1, 1);
+.btn:hover {
+    color: $green;
 }
 
-.button__inner span{
-    padding-right: rem(8);
-
-    font-family: Gotu;
-    font-size: rem(14);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 22px; /* 157.143% */
-    white-space: nowrap;
-   
+.btn:hover::after {
+    width: 100%;
 }
 
-.button__inner span::first-letter{
+.btn:hover .btn__arrow::after {
+    background-color: $green;
+  }
 
-    text-transform: uppercase;
-    
-}
-
-.button__arrow{
-    position: relative;
-}
+.btn:hover .btn__arrow::before {
+    background-color: $green;
+  }
 
 
-.button__arrow::before{
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    content: "";
-    display: block;
-    height: 0.0625rem;
-    position: absolute;
-    right: 3.0625rem;
-    top: 30%;
-    left: 138%;
-    transform: rotate(45deg);
-    transition: 0.3s;
-    width: 0.625rem;
-}
 
 
-.button__arrow::after{
-   
-
-
-background-color: #FFFFFF;
-border-radius: 10px;
-content: "";
-display: block;
-height: 0.0625rem;
-position: absolute;
-right: 3.125rem;
-top: 48%;
-left: 100%;
-transform: translateY(-50%);
-transition: 0.3s;
-width: 2.5rem;
-
-}
-
-.button:hover .button__arrow::after{
-   background-color: rgba(64, 143, 149, 1);
-   border-radius: 10px;
-   content: "";
-   display: block;
-   height: 0.0625rem;
-   position: absolute;
-   right: 3.125rem;
-   top: 48%;
-   left: 100%;
-   transform: translateY(-50%);
-   transition: 0.3s;
-   width: 2.5rem;
-    
-}
-
-.button:hover .button__arrow::before{
-    background-color: rgba(64, 143, 149, 1);
-    
-    border-radius: 10px;
-    content: "";
-    display: block;
-    height: 0.0625rem;
-    position: absolute;
-    right: 3.0625rem;
-    top: 30%;
-    left: 138%;
-    transform: rotate(45deg);
-    transition: 0.3s;
-    width: 0.625rem;
- }
 
 
 

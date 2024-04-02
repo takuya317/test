@@ -1,0 +1,42 @@
+@use "global" as *;
+
+
+.head{
+    position: relative;
+    color: var(--green, #0D2936);
+font-family: "Noto Sans JP";
+font-size: rem(24);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-left: rem(82);
+}
+
+
+.head::before{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: 0;
+    content: "";
+    height: rem(50);
+    background-color: rgba(64, 143, 149, 1);
+    position: absolute;
+    width: rem(8);
+    z-index: 2;
+    bottom: -20%;
+}
+
+.head::after{
+background-image: url(../images/common/kuzira3.jpg);
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+content: "";
+height: rem(50);
+left: rem(24);
+bottom:-14%;
+position: absolute;
+width: rem(50);
+z-index: 2;
+}

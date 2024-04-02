@@ -1,0 +1,106 @@
+@use "global" as *;
+
+.privacy-policy{
+
+
+
+}
+
+.privacy-policy__inner{
+    color: var(--green, #0D2936);
+    font-family: "Noto Sans JP";
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2; /* 200% */
+    position: relative;
+    max-width: rem(600);
+    @include mq("md"){
+        max-width: rem(850);
+       padding-top: rem(40);
+     }
+}
+
+
+.privacy-policy__head{
+    color: var(--green, #0D2936);
+font-family: "Noto Sans JP";
+font-size: rem(24);
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+
+@include mq("md"){
+   font-size: rem(32);
+  
+}
+
+}
+
+.privacy-policy__text:nth-of-type(1){
+margin-top: rem(40);
+}
+
+.privacy-policy__text:nth-of-type(2){
+    margin-top: rem(32);
+    }
+
+
+// .privacy-policy__ordered-list li:first-child{
+//         margin-top: rem(32);
+//         }
+
+.privacy-policy__ordered-list{
+    list-style:decimal ;
+   padding-left: rem(22);
+  
+
+}
+
+.privacy-policy__top{
+    margin-top: rem(32);
+}
+
+.privacy-policy__ordered-list li{
+    padding-left: rem(2);
+    
+}
+
+.privacy-policy__unordered-list{
+    
+}
+
+
+.privacy-policy__unordered-list li{
+@include mq("md"){
+    display: inline;
+}
+}
+
+
+.privacy-policy__inner::after{
+   
+    content: "";
+    position: absolute;
+    background-image: url(../images/common/sub-campaign-sakana.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: inline-block;
+    top: -1.3%;
+    left: calc(52% - min(48vw,40rem));
+   
+    height: rem(55);
+    width: rem(120);
+   z-index: 1;
+   @include mq("md"){
+    height: rem(138);
+    width: rem(301);
+    top: -2.8%;
+   }
+}
+
+.privacy-policy__br{
+    @include mq("md"){
+        display: none;
+    }
+}
