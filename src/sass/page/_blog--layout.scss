@@ -1,6 +1,6 @@
 @use "global" as *;
 
-.blog--layout{
+.layout-blog{
     margin-top: rem(80);
     @include mq("md"){
         margin-top: rem(-0);
@@ -9,13 +9,13 @@
         }
 }
 
-.blog--layout__color{
+.layout-blog__color{
     @include mq("md"){
     color: #FFF !important;
     }
 }
 
-.blog--layout__color::first-letter{
+.layout-blog__color::first-letter{
     @include mq("md"){
     color: #FFF !important;
     }

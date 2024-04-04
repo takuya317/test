@@ -24,9 +24,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="assets/js/jquery.inview.min.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="assets/js/jquery.inview.min.js"></script>
   <script defer src="assets/js/script.js"></script>
 </head>
 
@@ -37,7 +37,7 @@
   <header class="header">
     <div class="header__inner">
       <h1 class="header__logo">
-        <a href="page-site-map.html">
+        <a href="">
           <img src="./assets/images/common/top-CodeUps.png" alt="ヘッダーのロゴ">
         </a>
       </h1>
@@ -46,36 +46,36 @@
       <nav class="header__pc-nav pc-nav">
         <ul class="pc-nav__items">
           <li class="pc-nav__item">
-            <a href="page-404.html" class="">Campaign
+            <a href="" class="">Campaign
             <span>キャンペーン</span></a>
           </li>
 
           <li class="pc-nav__item">
-            <a href="page-aboutus.html" class="">About us
+            <a href="" class="">About us
             <span>私たちについて</span></a>
           </li>
           <li class="pc-nav__item">
-            <a href="page-information.html" class="">Information
+            <a href="" class="">Information
             <span>ダイビング情報</span></a>
           </li>
           <li class="pc-nav__item">
-            <a href="page-blog.html" class="">Blog
+            <a href="" class="">Blog
             <span>ブログ</span></a>
           </li>
           <li class="pc-nav__item">
-            <a href="page-voice.html" class="">Voice
+            <a href="" class="">Voice
             <span>お客様の声</span></a>
           </li>
           <li class="pc-nav__item">
-            <a href="page-price.html" class="">Price
+            <a href="" class="">Price
             <span>料金一覧</span></a>
           </li>
           <li class="pc-nav__item">
-            <a href="page-faq.html" class="">FAQ
+            <a href="" class="">FAQ
             <span>よくある質問</span></a>
           </li>
           <li class="pc-nav__item">
-            <a href="page-contact.html" class="">Contact
+            <a href="" class="">Contact
             <span>お問合せ</span></a>
           </li>
         </ul>
@@ -83,47 +83,77 @@
       <!-- pc用のナビゲーション -->
 
       <!-- sp用のドロワー -->
-      <btn class="header__drawer humburger js-humburger">
+      <div class="header__drawer humburger js-humburger">
         <span></span>
         <span></span>
         <span></span>
-      </btn>
+      </div>
         <!-- sp用のドロワー -->
    
 
 
 
-    <nav class="header__sp-nav sp-nav js-sp-nav">
-      <div class="sp-nav__wrapper">
-        <div class="sp-nav__inner">
-          <ul class="sp-nav__items">
-    
-              <li class="sp-nav__item sp-nav__reg">
-                <a href="page-campaign.html">
-                  <span class="sp-nav__img"></span>
-                  キャンペーン</a>
-              </li>
-              <li class="sp-nav__item">
-                <a href="">ライセンス取得</a>
-              </li>
-              <li class="sp-nav__item">
-                <a href="">貸切体験ダイビング</a>
-              </li>
-              <li class="sp-nav__item">
-                <a href="">ナイトダイビング</a>
-              </li>
-              <li class="sp-nav__item sp-nav__reg">
-                <a href="page-aboutus.html">
-                  <span class="sp-nav__img"></span>
-                  私たちについて</a>
-              </li>      
-          </ul>
-            
+      <nav class="header__sp-nav sp-nav js-sp-nav">
+        <div class="sp-nav__wrapper">
+          <div class="sp-nav__inner">
+            <ul class="sp-nav__items">
+      
+                <li class="sp-nav__item sp-nav__reg">
+                  <a href="">
+                    <span class="sp-nav__img"></span>
+                    キャンペーン</a>
+                </li>
+                <li class="sp-nav__item">
+                  <a href="">ライセンス取得</a>
+                </li>
+                <li class="sp-nav__item">
+                  <a href="">貸切体験ダイビング</a>
+                </li>
+                <li class="sp-nav__item">
+                  <a href="">ナイトダイビング</a>
+                </li>
+                <li class="sp-nav__item sp-nav__reg">
+                  <a href="">
+                    <span class="sp-nav__img"></span>
+                    私たちについて</a>
+                </li>      
+            </ul>
+              
+              <ul class="sp-nav__items">
+                <li class="sp-nav__item sp-nav__reg">
+                  <a href="">
+                    <span class="sp-nav__img"></span>
+                    ダイビング情報</a>
+                </li>
+                <li class="sp-nav__item">
+                  <a href="">ライセンス講習</a>
+                </li>
+                <li class="sp-nav__item">
+                  <a href="">体験ダイビング</a>
+                </li>
+                <li class="sp-nav__item">
+                  <a href="">ファンダイビング</a>
+                </li>
+                <li class="sp-nav__item sp-nav__reg">
+                  <a href="">
+                    <span class="sp-nav__img"></span>
+                    ブログ</a>
+                </li>
+              </ul>
+          </div> 
+          <!-- nav__innerの閉じタグ   -->
+
+          <div class="sp-nav__inner">
             <ul class="sp-nav__items">
               <li class="sp-nav__item sp-nav__reg">
                 <a href="">
                   <span class="sp-nav__img"></span>
-                  ダイビング情報</a>
+                  お客様の声</a>
+              </li>
+              <li class="sp-nav__item sp-nav__reg">
+                <a href="">
+                  <span class="sp-nav__img"></span>
+                  料金一覧</a>
               </li>
               <li class="sp-nav__item">
                 <a href="">ライセンス講習</a>
@@ -134,81 +164,51 @@
               <li class="sp-nav__item">
                 <a href="">ファンダイビング</a>
               </li>
-              <li class="sp-nav__item sp-nav__reg">
-                <a href="page-blog.html">
-                  <span class="sp-nav__img"></span>
-                  ブログ</a>
-              </li>
             </ul>
-        </div> 
-        <!-- nav__innerの閉じタグ   -->
 
-        <div class="sp-nav__inner">
-          <ul class="sp-nav__items">
-            <li class="sp-nav__item sp-nav__reg">
-              <a href="">
-                <span class="sp-nav__img"></span>
-                お客様の声</a>
-            </li>
-            <li class="sp-nav__item sp-nav__reg">
-              <a href="">
-                <span class="sp-nav__img"></span>
-                料金一覧</a>
-            </li>
-            <li class="sp-nav__item">
-              <a href="">ライセンス講習</a>
-            </li>
-            <li class="sp-nav__item">
-              <a href="">体験ダイビング</a>
-            </li>
-            <li class="sp-nav__item">
-              <a href="">ファンダイビング</a>
-            </li>
-          </ul>
-
-          <ul class="sp-nav__items">
-            <li class="sp-nav__item__item sp-nav__reg">
-              <a href="page-faq.html">
-                <span class="sp-nav__img"></span>
-                よくある質問</a>
-            </li>
-            <li class="sp-nav__item__item sp-nav__reg">
-              <a href="page-policy.html">
-                <span class="sp-nav__img"></span>
-                プライバシー
-              <br class="sp-nav__br">
-              ポリシー
-                </a>
-            </li>
-            <li class="sp-nav__item__item sp-nav__reg">
-              <a href="page-terms-of-service.html">
-                <span class="sp-nav__img"></span>
-                利用規約</a>
-            </li>
-            <li class="sp-nav__item__item sp-nav__reg">
-              <a href="">
-                <span class="sp-nav__img"></span>
-                お問い合わせ</a>
-            </li>
-          
-          </ul>
+            <ul class="sp-nav__items">
+              <li class="sp-nav__item sp-nav__reg">
+                <a href="">
+                  <span class="sp-nav__img"></span>
+                  よくある質問</a>
+              </li>
+              <li class="sp-nav__item sp-nav__reg">
+                <a href="">
+                  <span class="sp-nav__img"></span>
+                  プライバシー
+                <br class="sp-nav__br">
+                ポリシー
+                  </a>
+              </li>
+              <li class="sp-nav__item sp-nav__reg">
+                <a href="">
+                  <span class="sp-nav__img"></span>
+                  利用規約</a>
+              </li>
+              <li class="sp-nav__item sp-nav__reg">
+                <a href="">
+                  <span class="sp-nav__img"></span>
+                  お問い合わせ</a>
+              </li>
+            
+            </ul>
+          </div>
+          <!-- nav__innerの閉じタグ -->
         </div>
-        <!-- nav__innerの閉じタグ -->
-      </div>
-     
-    </nav>
+      
+      </nav>
   </div>
   <!-- インナー閉じタグ -->
   </header>
 
 
 
-   <section class="mv swiper">
+   <section class="mv">
     
     <div class="mv__inner">
 
 
-        <div class="swiper mv__swiper js-mv-swiper">
+        <div class="mv__swiper js-mv-swiper swiper">
           <div class="swiper-wrapper">
           
             <div class="swiper-slide">
@@ -240,7 +240,7 @@
             </div>
 
         
-        </div>
+          </div>
 
         </div>  
 
@@ -252,7 +252,7 @@
    </section>
   
 <!-- キャンペーンセクション -->
-   <section class="campaign campaign--top">
+   <section class="campaign layout-campaign">
     <div class="campaign__inner inner">
         <div class="campaign__arrows">
           <div class="campaign__leftarrow js-campaign__leftarrow">
@@ -261,7 +261,7 @@
           <div class="campaign__rightarrow js-campaign__rightarrow"><img src="./assets/images/common/migi.jpg" alt="右矢印"></div>
         </div>
 
-        <div class="campaign__tittle section-header">
+        <div class="campaign__header section-header">
             <p class="section-header__engtittle">campaign</p>
             <h2 class="section-header__jatittle">キャンペーン</h2>
             
@@ -275,6 +275,7 @@
         
           <!-- cardセクション -->
           <div class="campaign__card campaign-card swiper-slide">
+            <!-- 1エレメント2ブロック -->
             <div class="campaign-card__img">
               <img src="./assets/images/common/campaign1.jpg" alt="魚群">
             </div>
@@ -353,7 +354,7 @@
 
 
       <div class="campain__btn">
-        <a href="page-campaign.html" class="btn">          
+        <a href="" class="btn">          
           <span class="btn__arrow">view more</span>
         </a>
       </div>
@@ -364,7 +365,7 @@
    <!-- aboutセクション -->
     <section class="about about-layout">
       <div class="about__inner inner">
-        <div class="about__tittle section-header">
+        <div class="about__header section-header">
           <p class="section-header__engtittle">about us</p>
           <h2 class="section-header__jatittle">私たちについて</h2>
         </div>
@@ -409,9 +410,9 @@
    </section>
    <!-- aboutセクション -->
 
-   <section class="information information--layout">
+   <section class="information layout-information">
     <div class="information__inner inner">
-      <div class="information__tittle section-header">
+      <div class="information__header section-header">
         <p class="section-header__engtittle">information</p>
         <h2 class="section-header__jatittle tittle--japanese">ダイビング情報</h2>
       </div>
@@ -431,7 +432,7 @@
             </div>
 
             <div class="information__btn">
-              <a href="page-information.html" class="btn">          
+              <a href="" class="btn">          
                 <span class="btn__arrow">view more</span>
               </a>
             </div>
@@ -444,14 +445,15 @@
 
       <!-- blogセクション -->
 
-   <section class="blog blog--layout">
+   <section class="blog layout-blog">
     <div class="blog__inner inner">
-        <div class="blog__tittle section-header">
-          <p class="section-header__engtittle blog--layout__color">blog</p>
-          <h2 class="section-header__jatittle blog--layout__color">ブログ</h2>
+        <div class="blog__header section-header">
+          <p class="section-header__engtittle layout-blog__color">blog</p>
+          <h2 class="section-header__jatittle layout-blog__color">ブログ</h2>
         </div>
 
         <div class="blog__cards">
+          <!-- ↑にブログカーズブロックをblog-cardsを作るべき？ -->
           <!-- ブログのカード -->
           
           <a href="" class="blog__card blog-card">
@@ -523,10 +525,10 @@
    </section>
     <!-- ブログのsection -->
 
-    <section class="voice voice--layout">
+    <section class="voice layout-voice">
      <!-- voiceのsection -->
      <div class="voice__inner inner">
-        <div class="voice__tittle section-header">
+        <div class="voice__header section-header">
           <p class="section-header__engtittle">voice</p>
           <h2 class="section-header__jatittle">お客様の声</h2>
         </div>
@@ -588,7 +590,7 @@
       
       <div class="voice__btn">
         
-        <a href="page-voice.html" class="btn">          
+        <a href="" class="btn">          
           <span class="btn__arrow">view more</span>
         </a>
 
@@ -599,10 +601,10 @@
      <!-- voiceのsection -->
 
 
-    <section class="price price--layout">
+    <section class="price layout-price">
       <div class="price__subinner inner">
       <!-- priceのsection -->
-      <div class="price__tittle section-header">
+      <div class="price__header section-header">
         <p class="section-header__engtittle">price</p>
         <h2 class="section-header__jatittle">料金一覧</h2>
       </div>
@@ -714,9 +716,10 @@
     </section>
     <!-- priceのsection -->
 
-    <section class="contact contact--layout">
-    <div class="inner">
-      <div class="contact__inner">
+    <section class="contact layout-contact">
+      
+    <div class="contact__inner inner">
+      <div class="contact__maininner">
        <div class="contact__subinner"> 
         <div class="contact__img3"><img src="./assets/images/common/sakana.png" alt="魚群"></div>
 
@@ -743,6 +746,7 @@
           </div>
         </div>
       </div>
+    
    
 
         <div class="cotact__rightwrap">
@@ -828,7 +832,7 @@
                   <a href="">ファンダイビング</a>
                 </li>
                 <li class="footer-nav__item footer-nav__reg">
-                  <a href="page-blog.html">
+                  <a href="">
                     
                     ブログ</a>
                 </li>
@@ -844,7 +848,7 @@
                   お客様の声</a>
               </li>
               <li class="footer-nav__item footer-nav__reg">
-                <a href="page-price.html">
+                <a href="">
                   
                   料金一覧</a>
               </li>
@@ -861,12 +865,12 @@
 
             <ul class="footer-nav__items">
               <li class="footer-nav__item__item footer-nav__reg">
-                <a href="page-faq.html">
+                <a href="">
                   
                   よくある質問</a>
               </li>
               <li class="footer-nav__item__item footer-nav__reg">
-                <a href="page-policy.html">
+                <a href="">
                   
                   プライバシー
                 <br class="footer-nav__br">
@@ -874,7 +878,7 @@
                   </a>
               </li>
               <li class="footer-nav__item__item footer-nav__reg">
-                <a href="page-terms-of-service.html">
+                <a href="">
                   
                   利用規約</a>
               </li>

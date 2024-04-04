@@ -6,7 +6,7 @@
 }
 
 
-.contact__inner{
+.contact__maininner{
     position: relative;
     max-width: rem(600);
     padding-left: rem(25);
@@ -111,7 +111,7 @@
     
     @include mq("md"){
         width: 34%;
-        // padding-right: rem(115);
+        padding-top: rem(20);
     }
 
 }
@@ -170,7 +170,7 @@
     @include mq("md"){
         margin-top: rem(0);
 
-        padding-top: rem(20);
+        // padding-top: rem(20);
         // margin-left: rem(20);
     }
  

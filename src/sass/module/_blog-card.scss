@@ -2,10 +2,8 @@
 
 
 .blog-card{
-
  
     display: inline-block;
-    max-width: rem(600);
    
    
     background: var(--White, #FFF);
@@ -21,7 +19,7 @@ padding: rem(16) rem(16) rem(24) rem(16);
  
     aspect-ratio: 301/201;
    
-    width: 100%;
+    
     
 }
 
@@ -31,7 +29,7 @@ padding: rem(16) rem(16) rem(24) rem(16);
 
 
 .blog-card__img img{
-    max-width: 100%;
+    
     object-fit: cover;
 }
 

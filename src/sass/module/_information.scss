@@ -14,7 +14,7 @@
 
 }
 
-.information__tittle{
+.information__header{
    
 }
 
@@ -122,7 +122,7 @@ letter-spacing: 0.005em;
 
     
     @include mq("md"){
-        margin-top: rem(34);
+        margin-top: rem(40);
         display: flex;
         max-width: rem(1200);
         justify-content: space-between;

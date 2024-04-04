@@ -6,12 +6,12 @@
     background-color: rgba(221, 240, 241, 1);
     text-align: center;
     @include mq("md"){
-        padding-bottom: rem(100);
+        padding-bottom: rem(106);
         padding-top: rem(100);
     }
 }
 
-.price__tittle{
+.price__header{
 
 
 
@@ -56,7 +56,7 @@
     background-size: cover;
     // display: inline-block;
     left: calc(50% - min(48vw,38.75rem));
-    bottom: -4%;
+    bottom: -5%;
 
   
     
