@@ -1,65 +1,49 @@
 @use "global" as *;
 
 .about{
-text-align: center;
+
 }
 
-
-.about__header{
-    @include mq("md"){
-
-    }
-}
 
 .about__inner{
     max-width: rem(600);
     position: relative;
-
     @include mq("md"){
-        
-        text-align: center;
-        height: auto;
-       
+        height: auto;   
     }
-
-}
+ }
 
 
 .about__imges{
     margin-top: rem(24);
     position: relative;
     height: auto;
-    
- 
+
     @include mq("md"){
         
         display: flex;
-    text-align: center;
-      margin-top: rem(36);
-   
+        justify-content: end;
+        margin-top: rem(36);
+
     }
 
 }
 
 
 .about__img-left{
-   
     position: absolute;
     width: 37.1%;
- 
     z-index: 3;
-    height: 100%;
 
     @include mq("md"){
         left: 0;
         z-index: 3;
     }
-   
+
 }
 
 .about__img-left img{
     object-fit: cover;
-    width: 100%;
     aspect-ratio: 128/194;
     @include mq("md"){
         aspect-ratio: 400/604;
@@ -68,124 +52,93 @@ text-align: center;
 }
 
 
-
-
-.about__img-right{
-   
-    position: relative;
-    width: 81.5%;
+    .about__img-right{
+        position: relative;
+        width: 81.5%;
+        z-index: 2;
+        padding-top: 8%;
+        margin-left: rem(64);
+        @include mq("md"){
+    margin-top: 7.5%;
+    padding-top: 0;
     z-index: 2;
-    margin-left: auto;
-    padding-top: 8%;
-    @include mq("md"){
-   margin-top: 7.5%;
-   padding-top: 0;
-   z-index: 2;
+        }
     }
-}
 
 
 .about__img-right img{
-    object-fit: cover;
-    width: 100%;
-    
+    object-fit: cover;    
     aspect-ratio: 281/186;
     @include mq("md"){
         aspect-ratio: 880/581;
-        
-
     }
 }
 
-
-
 .about__btn{
-   
+   text-align: center;
    margin-top: rem(49);
-    margin-left: rem(-15);
    @include mq("md"){
     margin-top: rem(38);
-    margin-left: rem(0);
- 
-    
+    margin-left: rem(0);   
+}
 }
 
+.about__container{
+    z-index: 14 ;
+    @include mq("md"){
+    position: absolute;
+    top: 30.5%;
+     right: 3.9%;
+    z-index: 3 ;
+    display: flex; 
+    gap: rem(40);
+    }
 }
+
 
 .about__head{
     text-align: left;
     margin-top: rem(39);
     color: var(--greenaccent, #408F95);
-font-family: Gotu;
-font-size: rem(40);
-font-style: normal;
-font-weight: 400;
-line-height: 1; /* 100% */
-white-space: nowrap;
+    font-family: Gotu;
+    font-size: rem(40);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+    white-space: nowrap;
 
 @include mq("md"){
     color: #FFF;
-    font-family: Gotu;
     font-size: rem(80);
-    font-style: normal;
-    font-weight: 400;
     line-height: 1.25; /* 125% */
-    margin-top: rem(0);
-    
-}
-
+    margin-top: rem(0);  
+    }
 }
 
 .about__text{
     text-align: left;
     margin-top: rem(17);
     color: var(--green, #0D2936);
-font-family: "Noto Sans JP";
-font-size: rem(16);
-font-style: normal;
-font-weight: 400;
-line-height: 1.5; /* 150% */
+    font-family: "Noto Sans JP";
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
 
 @include mq("md"){
-   
     color: var(--White, #FFF);
-font-family: "Noto Sans JP";
-font-size: rem(16);
-font-style: normal;
-font-weight: 400;
-width: rem(400);
-line-height: 1.5; /* 150% */
-margin-left: rem(0);
-margin-top: rem(0);
+    font-family: "Noto Sans JP";
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 400;
+    width: rem(400);
+    line-height: 1.5; /* 150% */
+    margin-left: rem(0);
+    margin-top: rem(0);
     }
 }
 
 
-.about__container{
-
-    z-index: 14 ;
-
-    @include mq("md"){
-    position: absolute;
-//   max-width: 80%;
-    top: 30.5%;
-     right: 3.9%;
-    z-index: 3 ;
-    display: flex; 
-    gap: rem(40);
-   
-
-    }
-}
-
-
-
-.about__wrapper{
-    @include mq("md"){
-
-    }
-
-}
 
 .about__text span{
     display: none;
@@ -197,7 +150,7 @@ margin-top: rem(0);
         font-style: normal;
         font-weight: 400;
         line-height: 1.5; /* 150% */
-       margin-left: rem(-4);
+        letter-spacing: 0.05em;
         }
 }
 
@@ -209,7 +162,6 @@ margin-top: rem(0);
        position: absolute;
    
      right: calc(50.2% - min(48vw,40rem));
- 
         bottom: rem(-88);
         width:rem(194) ;
         height: rem(181); 

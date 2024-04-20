@@ -2,32 +2,19 @@
 
 .footer-nav{
     display: flex;
-    //  padding-left: rem(16);  
-
     @include mq("md"){  
         padding-left: rem(0);    
     }
 }
 
 
-.footer-nav__items{
-    
-    @include mq("md"){    
-    }
-}
-
-.footer-nav__item{
-    
-}
-
-
-.footer-nav__reg{
+.footer-nav__item--reg{
     margin-top: rem(16);
     position: relative;
     font-weight: 700;
 }
 
-.footer-nav__reg::before{
+.footer-nav__item--reg::before{
     background-image: url(../images/common/hitode.jpg);
     background-size: contain;
     content: "";
@@ -39,101 +26,62 @@
     width: rem(18);
 }
 
-
-
 .footer-nav a{
     display: block;
     color: var(--White, #FFF);
-font-family: "Noto Sans JP";
-font-size: rem(16);
-font-style: normal;
-line-height: rem(18); 
-transition: opacity 0.3s;
-padding-top: rem(12);
-padding-bottom: rem(12);
-padding-left: rem(18);
-
+    font-family: "Noto Sans JP";
+    font-size: rem(16);
+    font-style: normal;
+    line-height: rem(18); 
+    transition: opacity 0.3s;
+    padding-top: rem(12);
+    padding-bottom: rem(12);
+    padding-left: rem(18);
 }
-
-
-
-
-
 
 .footer-nav__item:nth-child(3){
     white-space: nowrap;
 } 
 
 
-
-
-
 .footer-nav__item a:hover{
     opacity: 0.7;
-
 }
-
-
-
 
 
 .footer-nav__img{
     content: url(../images/common/hitode.jpg);
     height: 1.125rem;
-   
     width: 1.125rem;
-   
-    
 }
 
 
-
-
-
 .footer-nav__inner{
-
-    
-
     @include mq("md"){
         display: flex;
         width: 50%;
         margin-top: rem(-6);
        gap: rem(126);
-
     }
 }
 
-.footer-nav__inner:first-child{
-    @include mq("md"){
-        // padding-left: rem(24);
-    }
-}
-
-
-
-
-.footer-nav__inner .footer-nav__items:last-child{
-    
+.footer-nav__items:last-child{
     margin-top: rem(15);
     @include mq("md"){
         margin-top: rem(0);
-    //    margin-left: rem(120);
     }
 }
 
-
-.footer-nav__inner .footer-nav__items:last-child{
+.footer-nav__items:last-child{
     margin-top: rem(15);
         @include mq("md"){
             margin-top: rem(0);
-            // margin-left: rem(145);
         }
 }
 
 .footer-nav__br{
     @include mq("md"){
-      display: none;
-        
+      display: none;      
     }
 }
 

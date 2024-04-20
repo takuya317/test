@@ -1,22 +1,17 @@
 
 // ドロワー部分
 $(".js-humburger").click(function(){
-
-
     if ($(".js-humburger").hasClass('is-active')) {
       $('.js-humburger').removeClass("is-active");
       $(".js-sp-nav").fadeOut();
       $(".header").removeClass("is-active");
-      // $("html").toggleClass("is-fixed");
       $("html,body").css("overflow", "");
       
   } else {
     $('.js-humburger').addClass("is-active");
     $(".js-sp-nav").fadeIn();
     $(".header").addClass("is-active");
-    
-     
-      $("html,body").css("overflow", "hidden");
+    $("html,body").css("overflow", "hidden");
   }
 
   $(window).on('resize', function () {
@@ -25,14 +20,12 @@ $(".js-humburger").click(function(){
       $(".js-sp-nav").fadeOut();
       $(".header").removeClass("is-active");
       $("html,body").css("overflow", "");
-
     }
   });
 
 });
 
 // mv部分のスワイパー
-
 var mv_swiper = new Swiper(".js-mv-swiper", {
     loop: true,
     speed: 2000,
@@ -44,19 +37,17 @@ var mv_swiper = new Swiper(".js-mv-swiper", {
       delay: 4000,
       disableOnInteraction: false
     },
-
   });
 
 
 
 // campaign部分のスワイパー,
-
 $(function () {
     const swiper = new Swiper('.js-campaign-swiper', {
         loop:true,
         loopAdditionalSlides: 4,
         loopedSlides: 8,
-        speed: 3000,
+        speed: 5000,
         spaceBetween:24,
         width:280,
         autoplay:{
@@ -67,8 +58,6 @@ $(function () {
         },
 
         grabCursor:true,
-        // centeredSlides:false,
-
         navigation: { 
             nextEl: '.js-campaign__rightarrow img',
             prevEl: '.js-campaign__leftarrow img',
@@ -119,19 +108,19 @@ box.each(function(){
 
  // Topへ戻るボタン
  $(function () {
-    var pageTop = $('.js-page-top');
-    pageTop.hide(); // 最初はボタンを非表示にする
+    var pageTop = $('.js-page-top');  //HTMLのオブジェクト情報を入れる
+    pageTop.hide(); // 最初はボタンを非表示にする,display:none;に対応
     $(window).scroll(function () {
       if ($(this).scrollTop() > 100) {
         // 100pxスクロールしたら表示
         pageTop.fadeIn(); // 100px以上スクロールしたらボタンをフェードイン
       } else {
-        pageTop.fadeOut(); // 100px以下になったらボタンをフェードアウト
+        pageTop.fadeOut(); // 100px以下になったらボタンをフェードアウト、display:none;に対応
       }
     });
 
     pageTop.click(function () {
-      $('body,html').animate({
+      $('body,html').animate({  //色々なブラウザに対応するため。両方に適用
         scrollTop: 0 // 上から0pxの位置に戻る
       }, 500, // 500ミリ秒かけて戻る
       'swing');

@@ -1,87 +1,62 @@
 @use "global" as *;
 
 .voice{
-    text-align: center;
     position: relative;
 }
 
-.voice__inner::before{
-    @include mq("md"){
-    content: "";
-    position: absolute;
-    background-image: url(../images/common/tatu.png);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: inline-block;
-    bottom: -11%;
-    right: calc(59% - min(54vw,40rem));
-    z-index: 1;
-    height: rem(162);
-    width: rem(71);
-    }
-}
-
-.voice__inner::after{
-    @include mq("md"){
-    content: "";
-    position: absolute;
-    background-image: url(../images/common/sakana2.png);
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: inline-block;
-    top: -19%;
-    left: calc(51.5% - min(48vw,40rem));
-    z-index: 1;
-    height: rem(138);
-    width: rem(301);
+    .voice__inner::before{
+        @include mq("md"){
+        content: "";
+        position: absolute;
+        background-image: url(../images/common/tatu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        bottom: -11%;
+        right: calc(59% - min(54vw,40rem));
+        z-index: 1;
+        height: rem(162);
+        width: rem(71);
+        }
     }
 
-}
-
-
-
-.voice__header{
-
-}
-
-.voice__inner{
-//    display: inline-block;
-    max-width: rem(600);
-    @include mq("md"){   
-        position: relative;      
+    .voice__inner::after{
+        @include mq("md"){
+        content: "";
+        position: absolute;
+        background-image: url(../images/common/sakana2.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: inline-block;
+        top: -19%;
+        left: calc(51.5% - min(48vw,40rem));
+        z-index: 1;
+        height: rem(138);
+        width: rem(301);
+        }
     }
-}
+
+    .voice__inner{
+        max-width: rem(600);
+        @include mq("md"){   
+            position: relative;      
+        }
+    }
 
 
 .voice__cards{
-  
-    width: 100%;
-
-    @include mq("md"){
-        margin-top: rem(34);
-       
-        gap: rem(40);
-        grid-template-columns: repeat(2, 1fr);
-        display: grid;
-        
-        }
+        @include mq("md"){
+            margin-top: rem(34);            
+            }
 }
 
-.voice__card{
-    margin-top: rem(40);
-    padding: rem(15) rem(16) rem(23) rem(16);
-    @include mq("md"){
-        padding: rem(15) rem(24) rem(24) rem(24);
-        margin-top: rem(0);
-        
-    }
-}
+
 
 
 .voice__btn{
     margin-top: rem(38);
-
+    text-align: center;
     @include mq("md"){
         margin-top: rem(80);
       }

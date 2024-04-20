@@ -3,20 +3,8 @@
 .layout-blog{
     margin-top: rem(80);
     @include mq("md"){
-        margin-top: rem(-0);
+        margin-top: rem(0);
         
     
         }
-}
-
-.layout-blog__color{
-    @include mq("md"){
-    color: #FFF !important;
-    }
-}
-
-.layout-blog__color::first-letter{
-    @include mq("md"){
-    color: #FFF !important;
-    }
 }

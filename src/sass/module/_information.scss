@@ -1,44 +1,41 @@
 @use "global" as *;
 
 .information{
-    text-align: center;
-   padding-bottom: rem(84);
-    background: var(--green2, #DDF0F1);
-    
+    padding-bottom: rem(84);
+    background: var(--green2, #DDF0F1);  
     padding-top: rem(80);
+        @include mq("md"){
+            padding-top: rem(102);
+            padding-bottom: rem(76);
+        }
+}
 
+.information__inner{
+
+    max-width: rem(600);
+}
+
+.information__wrap{
     @include mq("md"){
-        padding-top: rem(102);
-        padding-bottom: rem(76);
-    }
-
-}
-
-.information__header{
+        margin-top: rem(40);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       gap: rem(48);
    
+    }
 }
-
 
 .information__img{
-   
-
-    width: 100%;
-   
-    
     position: relative;
-    
-  margin-top: rem(24);
- 
+    margin-top: rem(24);
     @include mq("md"){
-        width: 51.5%;
-        margin-top: rem(0);
+    width: 51.5%;
+    margin-top: rem(0);
     }
-
 }
 
-
 .information__img img{
-
     aspect-ratio: 345/227;
     @include mq("md"){
     aspect-ratio: 540/356;
@@ -46,88 +43,62 @@
 }
 
 
-.information__subinner{
-   
-    margin-top: rem(25);
-    @include mq("md"){
-        width: 47%;
-        
-       margin-top: rem(0);
-        padding-right: rem(0);
-        margin-left: rem(0);
-     
-
-
+    .information__subinner{
+        margin-top: rem(25);
+        @include mq("md"){
+            width: 47%;    
+            margin-top: rem(0);
+            padding-right: rem(0);
+            margin-left: rem(0);
+        }
     }
-}
 
 .information__text1{
-   
     text-align: left;
     color: var(--green, #0D2936);
-font-family: "Noto Sans JP", sans-serif;
-font-size: rem(20);
-font-style: normal;
-font-weight: 700;
-line-height: 1.2; /* 120% */
-padding-bottom: rem(4);
-
-border-bottom: rem(1) solid var(--greenaccent, #408F95) ;
+    font-family: "Noto Sans JP", sans-serif;
+    font-size: rem(20);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.2; /* 120% */
+    padding-bottom: rem(4);
+    border-bottom: rem(1) solid var(--greenaccent, #408F95) ;
 
 @include mq("md"){
-    color: var(--green, #0D2936);
 font-family: "Noto Sans JP";
 font-size: rem(24);
-font-style: normal;
-font-weight: 700;
 line-height: 1; /* 120% */
 }
 
 }
 
-.information__text2{
-    text-align: left;
-    margin-top: rem(8);
-    color: var(--green, #0D2936);
-font-family: "Noto Sans JP", sans-serif;
-font-size: rem(16);
-font-style: normal;
-font-weight: 400;
-line-height: 1.5; /* 150% */
-letter-spacing: 0.005em;
+    .information__text2{
+        text-align: left;
+        margin-top: rem(8);
+        color: var(--green, #0D2936);
+        font-family: "Noto Sans JP", sans-serif;
+        font-size: rem(16);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5; /* 150% */
+        letter-spacing: 0.005em;
 
-@include mq("md"){
-    color: #000;
-    font-family: "Noto Sans JP";
-    font-size: rem(16);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5; /* 150% */
+    @include mq("md"){
+        color: #000;
+        font-family: "Noto Sans JP";
+        font-size: rem(16);
+        font-style: normal;
+        font-weight: 400;
+        line-height: 1.5; /* 150% */
 
-}
-}
+        }
+    }
 
 .information__btn{
     margin-top: rem(38);
-
+    text-align: center;
     @include mq("md"){
         margin-top: rem(40);
     }
 }
 
-.information__wrap{
-    max-width: rem(600);
-    margin-left: auto;
-    margin-right: auto;
-
-    
-    @include mq("md"){
-        margin-top: rem(40);
-        display: flex;
-        max-width: rem(1200);
-        justify-content: space-between;
-        align-items: center;
-       gap: rem(48);
-   
-    }
-}

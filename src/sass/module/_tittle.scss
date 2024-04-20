@@ -1,14 +1,8 @@
 @use "global" as *;
 
 .section-header{
-    display: block;
-    text-align: center;
-   
-   
-  
+    
 }
-
-
 
 .section-header__engtittle{
     color:black;
@@ -18,13 +12,10 @@
     font-weight: 400;
     line-height: rem(40);
     text-align: center;
-   
     @include mq("md"){
         font-size: rem(40);
     }
-    
 }
-
 
 .section-header__jatittle{
 text-align: center;
@@ -34,18 +25,32 @@ font-style: normal;
 font-weight: 400;
 line-height: rem(18); /* 150% */
 margin-top: rem(4);
-
 color: rgba(64, 143, 149, 1);
-
 @include mq("md"){
     margin-top: rem(8);
 }
-
 }
 
 
 .section-header__engtittle::first-letter{
     color: #408F95;
     text-transform: uppercase;
-    
+}
+
+.section-header__engtittle--color{
+    @include mq("md"){
+        color: #FFF ;
+        }
+}
+
+.section-header__engtittle--color::first-letter{
+    @include mq("md"){
+        color: #FFF ;
+        }
+}
+
+.section-header__jatittle--color{
+    @include mq("md"){
+        color: #FFF ;
+        }
 }
