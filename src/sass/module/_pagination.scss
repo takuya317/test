@@ -75,12 +75,10 @@ background: var(--greenaccent, #408F95);
 
 .pagenation__after::after{
     aspect-ratio: 1;
+    // 縦横幅を規定している
     border-bottom: 0.0625rem solid #408F95;
     border-right: 0.0625rem solid #408F95;
     content: "";
-    
-   
-    
     position: absolute;
     top: 50%;
     left: 35%;
@@ -88,7 +86,7 @@ background: var(--greenaccent, #408F95);
     width: 0.8rem;
 }
 
-.pagenation__number a.pagenation__pc{
+.pagenation__number a.pagenation__number--pc{
     display: none;
     @include mq("md"){
         display: inline-block;

@@ -1,44 +1,13 @@
 @use "global" as *;
 
-
-
 .campaign-page{
-    text-align: center;
-    position: relative;
    
 }
+
 
 .campaign-page__tab{
 
 }
-
-
-.campaign-page__inner::after{
-   
-    content: "";
-    position: absolute;
-    background-image: url(../images/common/sub-campaign-sakana.jpg);
-    background-repeat: no-repeat;
-    background-size: contain;
-    display: inline-block;
-    top: -1.25%;
-    left: calc(52% - min(48vw,40rem));
-   
-    height: rem(55);
-    width: rem(120);
-   z-index: 0;
-   @include mq("md"){
-    height: rem(138);
-    width: rem(301);
-    top: -3.5%;
-   }
-}
-
-
-
-
-
-
 
 .campaign-page__tittle{
     display: flex;
@@ -47,59 +16,29 @@
 
 
 
-
-
-.campaign-page__inner{
-    position: relative;
-}
-
-
 .campaign-page__cards{
-   margin-top: rem(39);
+     margin-top: rem(39);
     padding-left: rem(33);
     padding-right: rem(33);
     @include mq("md"){
-        display: grid;
-        row-gap: rem(80);
-        column-gap:rem(40) ;
         padding-left: rem(0);
         padding-right: rem(0);
-        grid-template-columns: repeat(2,1fr);
-    }
-    
+       
+    }  
 }
-
-
-
-
-.campaign-page__card{
-    @include mq("md"){
-        // width: 40%;
-     
-        
-    }
-}
-
 
 
 
 .campaign-page__card:not(:first-child){
     margin-top: rem(39);
-
-
-
-    @include mq("md"){
-        
-        margin-top: rem(0);
-        
+    @include mq("md"){     
+        margin-top: rem(0);       
     }
 }
-
 
 .campaign-page__pagenation{
     margin-top: rem(77);
     @include mq("md"){
         margin-top: rem(80);
     }
-
 }

@@ -1,0 +1,24 @@
+@use "global" as *;
+
+.common-fish{
+    position: relative;
+}
+
+.common-fish::after{
+    content: "";
+    position: absolute;
+    background-image: url(../images/common/sub-campaign-sakana.jpg);
+    background-size: contain;
+    display: inline-block;
+    top: -1.25%;
+    // ここはremでなおす
+    left: calc(52% - min(48vw,40rem));
+    height: rem(55);
+    width: rem(120);
+   z-index: -1;
+   @include mq("md"){
+    height: rem(138);
+    width: rem(301);
+    top: rem(-70);
+   }
+}

@@ -1,16 +1,19 @@
 @use "global" as *;
 
 .cards{
+    row-gap: rem(40);
+
     @include mq("md"){   
-        gap: rem(40);
+        row-gap: rem(80);
+        column-gap:rem(40) ;
         grid-template-columns: repeat(2, 1fr);
         display: grid;  
         }
 }
 
-.cards__item{
-    margin-top: rem(40);
-    @include mq("md"){    
-    margin-top: rem(0);
-    }
-}
+// .cards__item{
+//     margin-top: rem(40);
+//     @include mq("md"){    
+//     margin-top: rem(0);
+//     }
+// }

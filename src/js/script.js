@@ -139,13 +139,12 @@ box.each(function(){
         var number = $(this).data("number");
 
         if (number === "tab01") {
-        
           $('.js-sub-campaign-card').removeClass('is-active');
         }else{
           
         $('#' + number).removeClass('is-active');
+        
         }
-
     });
 });
 
