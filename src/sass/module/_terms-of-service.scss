@@ -1,0 +1,65 @@
+@use "global" as *;
+
+.terms-of-service__inner{
+    color: var(--green, #0D2936);
+    font-family: "Noto Sans JP";
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2; /* 200% */
+    position: relative;
+    max-width: rem(600);
+}
+
+.terms-of-service__inner.inner{
+    @include mq("md"){max-width: rem(850);}
+}
+
+
+.terms-of-service__head{
+    color: var(--green, #0D2936);
+    font-family: "Noto Sans JP";
+    font-size: rem(24);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    @include mq("md"){
+    font-size: rem(32);
+    }
+}
+
+.terms-of-service__text:nth-of-type(1){
+    margin-top: rem(40);
+}
+
+.terms-of-service__text:nth-of-type(2){
+    margin-top: rem(32);
+    }
+
+.terms-of-service__ordered-list{
+    list-style:decimal ;
+   padding-left: rem(22);
+}
+
+.terms-of-service__top{
+    margin-top: rem(32);
+}
+
+.terms-of-service__ordered-list li{
+    padding-left: rem(2); 
+}
+
+
+.terms-of-service__unordered-list li{
+@include mq("md"){
+    display: inline;
+}
+}
+
+
+.terms-of-service__br{
+    @include mq("md"){
+        display: none;
+    }
+}

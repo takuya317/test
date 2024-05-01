@@ -1,0 +1,47 @@
+@use "global" as *;
+
+.voice-page{
+    text-align: center;
+    position: relative;
+
+
+    padding-bottom: rem(24);
+    @include mq("md"){padding: 0;}
+}
+
+.voice-page__tab{
+
+}
+
+.voice-page__tittle{
+    display: flex;
+    position: relative;   
+}
+
+.voice-page__inner{
+    position: relative;
+}
+
+
+.voice-page__cards{
+   
+ 
+
+    @include mq("md"){
+        margin-top: rem(40);
+        }
+    
+}
+
+.voice-page__card{
+    @include mq("md"){
+    }
+}
+
+.voice-page__pagenation{
+    margin-top: rem(77);
+    @include mq("md"){
+        margin-top: rem(64);
+    }
+
+}

@@ -5,6 +5,11 @@
     z-index: -1;
 }
 
+.common-fish.common-fish--blog{
+    z-index: 1;
+    @include mq("md"){ z-index: -1;}
+}
+
 .common-fish::after{
     content: "";
     position: absolute;

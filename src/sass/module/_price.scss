@@ -1,0 +1,143 @@
+
+@use "global" as *;
+
+.price{
+    padding-top: rem(80);
+    background-color: rgba(221, 240, 241, 1);
+    @include mq("md"){
+        padding-bottom: rem(106);
+        padding-top: rem(100);
+    }
+}
+
+
+.price__subinner{
+    margin-top: rem(24);
+        @include mq("md"){
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: space-between;  
+            margin-top: rem(37);
+        }
+}
+
+    .price__inner{
+        max-width: rem(600);
+        padding-bottom: rem(83);
+        @include mq("md"){
+            position: relative;
+            padding-bottom: rem(0);
+            gap: rem(93);
+            justify-content: space-between;
+        }
+
+    }
+
+.price__inner::before{
+    @include mq("md"){
+    content: "";
+    position: absolute; 
+    background-image: url(../images/common/sakana3.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    left: calc(50% - min(48vw,38.75rem));
+    bottom: -5%;
+    z-index: 100;
+    width: rem(437);
+    height: rem(201);
+    }
+}
+
+
+.price__topic{
+    margin-top: rem(40);
+    padding-bottom: rem(3);
+    text-align: left;
+    color: var(--green, #0D2936);
+    font-family: "Noto Sans JP";
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.5; /* 150% */
+    border-bottom: rem(1) solid var(--greenaccent, #408F95);
+@include mq("md"){
+  margin-top: rem(0);
+    }
+
+}
+
+.price__wrap{
+    color: var(--green, #0D2936);
+    font-family: "Noto Sans JP";
+    font-size: rem(14);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.71429; /* 171.429% */
+    padding-top: rem(8);
+    display: flex;
+    justify-content: space-between;
+    @include mq("md"){
+        font-size: rem(16);
+        line-height: 1.5; 
+        }
+}
+
+
+
+.price__value{
+    letter-spacing: 0.001em;
+    text-align: right;
+}
+
+.price__btn{
+    margin-top: rem(40);
+    text-align: center;
+    @include mq("md"){
+       
+       margin-top: rem(80);
+     }
+
+}
+
+.price__container{
+    margin-top: rem(40);
+    @include mq("md"){
+       width: 45.5555%;
+       margin-top: rem(0);
+    }
+
+}
+
+
+
+
+.price__img{
+    @include mq("md"){
+    width: 45.5%;
+    }
+}
+
+
+.price__img img{
+    
+    object-fit: cover;
+    aspect-ratio: 345/227;
+    @include mq("md"){
+        aspect-ratio: 492/746;
+    }
+}
+
+.price__textes:not(:first-child){
+    @include mq("md"){
+
+        margin-top: rem(40);
+    }
+}
+
+.price__text{
+    @include mq("md"){
+        text-align: left;
+      
+    }  
+}

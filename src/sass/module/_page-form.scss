@@ -1,0 +1,519 @@
+@use "global" as *;
+
+.page-form__wrap {
+    padding-bottom: rem(24);
+    border-bottom: rem(1) dashed #408F95 ;
+
+    @include mq(md){
+        display: flex;
+        padding-bottom: rem(40);
+    }
+}
+
+.page-form__wrap + .page-form__wrap {
+    margin-top: rem(20);
+
+    @include mq(md){
+        margin-top: rem(38);
+    }
+}
+
+.page-form__wrap:nth-of-type(6){
+    padding-bottom: rem(18);
+
+
+    @include mq(md){
+        padding-bottom: rem(34);
+
+    }
+}
+
+.page-form__label{
+
+    color: var(--green, #0D2936);
+font-family: "Noto Sans JP";
+font-size: rem(16);
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-align: left;
+
+@include mq(md){
+    width: 31.43%;
+}
+}
+
+.page-form__label span{
+    padding: rem(2) rem(12) rem(2) rem(16);
+    color: #FFF;
+font-family: "Noto Sans JP";
+font-size: rem(12);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: center;
+letter-spacing: 0.4em;
+background: #C94800;
+margin-left: rem(8);
+
+
+}
+
+.page-form__input {
+    margin-top: rem(17);
+    flex-grow: 1;
+    
+    @include mq(md){
+        margin-top: 0;
+      
+    }
+}
+
+.page-form__input input::placeholder{
+    color: var(--green2, #DDF0F1);
+    font-family: "Noto Sans JP";
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.page-form-input input {
+    padding: rem(8) rem(16);
+    width: 100%;
+    font-size: rem(15);
+    line-height: 1.5;
+    border-radius: 0;
+    border: rem(1) solid var(--greenaccent, #408F95);
+background: var(--White, #FFF);
+    appearance: none;
+    background-color: transparent;
+    background-image: none;
+    
+}
+
+.page-form-input input:focus {
+    border: 1px solid #ccc;
+    box-shadow: none;
+    outline: none;
+}
+
+
+
+
+// チェックボックス
+
+.page-form__checkbox{
+    margin-top: rem(15);
+   
+    @include mq(md){
+        margin-top: rem(0);
+    }
+}
+
+
+.page-form__checkbox label {
+    display: block;
+    text-align: left;
+    @include mq(md){
+    padding-top:rem(2);
+    }
+}
+
+.page-form__checkbox label:not(:first-of-type) {
+    margin-top: rem(2);
+    @include mq(md){
+        margin-top: 0;
+       
+    }
+}
+
+.page-form__checkbox input {
+	display: none;
+}
+
+.page-form__checkbox input + span {
+    cursor: pointer;
+    display: inline-block;
+    padding: 0 0 0 rem(22);
+    position: relative;
+    font-size: rem(16);
+
+
+
+
+    color: var(--green, #0D2936);
+font-family: "Noto Sans JP";
+
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.page-form__checkbox input + span::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid #408F95;
+    display: block;
+    width: rem(15);
+    height: rem(15);
+    // border-radius: 50%;
+}
+
+.page-form__checkbox input + span::after {
+    content: "";
+    margin-top: rem(-2);
+    position: absolute;
+    top: 60%;
+    left: 1%;
+    transform: translateY(-50%) rotate(-35deg);
+    display: block;
+    width: rem(10);
+    height: rem(5);
+    border-bottom: rem(2) solid rgba(201, 72, 0, 1);
+    border-left: rem(2) solid rgba(201, 72, 0, 1);
+    transition:  .3s;
+    opacity: 0;
+}
+
+.page-form__checkbox input:checked + span::after {
+    opacity: 1;
+}
+
+
+.page-form__select{
+
+        flex-grow: 1;
+    
+}
+
+
+.page-form__select select {
+    padding: rem(11) rem(0) rem(11) rem(8);
+    width: 100%;
+    font-size: rem(15);
+    line-height: 1;
+    border-radius: 0;
+    border: rem(1) solid var(--greenaccent, #408F95);
+    background-image: url(./../images/common/sankaku.png);
+    background-repeat: no-repeat;
+    background-size: rem(12);
+    background-position: right rem(8) top rem(10);
+    appearance: none;
+    cursor: pointer;
+    margin-top: rem(18);
+
+    color: #000;
+font-family: "Noto Sans JP";
+font-size: rem(12);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+
+@include mq(md){
+    margin-top: rem(0);
+    padding: rem(7) rem(0) rem(6) rem(8);
+  }
+
+}
+
+.page-form__select select::-ms-expand {
+    display: none;
+}
+
+.page-form__select select:focus {
+    border: 1px solid #ccc;
+    box-shadow: none;
+    outline: none;
+}
+
+// テキストエリア
+
+.page-form__textarea{
+    flex-grow: 1;
+}
+
+.page-form__textarea textarea {
+
+    padding: rem(8) rem(15);
+    width: 100%;
+    height: rem(200);
+    font-size: rem(15);
+    border-radius: 0;
+    border: rem(1) solid var(--greenaccent, #408F95);
+    appearance: none;
+    background-color: transparent;
+    background-image: none;
+    margin-top: rem(18);
+
+    @include mq(md){
+        margin-top: 0;
+    }
+}
+
+.page-form__textarea textarea:focus {
+    border: 1px solid #ccc;
+    box-shadow: none;
+    outline: none;
+}
+
+.page-form__privacy{
+    margin: 0 auto;
+    width: 81.739%;
+    position: relative;
+    padding-left: rem(30);
+    margin-top: rem(38);
+    text-align: left;
+    @include mq(md){
+        margin-top: rem(82);
+        padding-left: rem(38);
+        
+        text-align: center;
+    }
+}
+
+.page-form__privacy input + span{
+    
+    color: #000;
+    font-family: "Noto Sans JP";
+    font-size: rem(14);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.57; /* 157.143% */
+
+}
+
+.page-form__privacy input + span::before {
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: 0;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid #408F95;
+    display: block;
+    width: rem(22);
+    height: rem(22);
+
+    @include mq(md){
+        left: 17.2%;
+    }
+}
+
+.page-form__privacy input + span::after {
+    content: "";
+    margin-top: rem(-2);
+    position: absolute;
+    top: 60%;
+    left: 1%;
+    transform: translateY(-50%) rotate(-35deg);
+    display: block;
+    width: rem(10);
+    height: rem(5);
+    border-bottom: rem(2) solid rgba(201, 72, 0, 1);
+    border-left: rem(2) solid rgba(201, 72, 0, 1);
+    transition:  .3s;
+    opacity: 0;
+    @include mq(md){
+        left: 18.2%;
+        top: 45%;
+    }
+    
+
+}
+
+.page-form__privacy input:checked + span::after {
+    opacity: 1;
+}
+
+
+// ボタン
+
+.page-form__btn{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: rem(20);
+    width:rem(206) ;
+    display: inline-block;
+    line-height: 1;
+    @include mq(md){
+        margin-top: rem(34);
+    }
+}
+
+
+.page-form__btn{
+    display: inline-block;
+    background-color: rgba(64, 143, 149, 1);
+    position: relative;
+    width: rem(202);
+    padding: rem(16) rem(56);
+   z-index: 3;
+    display: flex;
+    color: #FFF;
+    border: 1px solid rgba(64, 143, 149, 1);
+    height: auto;
+}
+
+
+.page-form__btn:hover{
+    color: rgba(64, 143, 149, 1);
+}
+
+.page-form__btn::before{
+    content: "";
+    border: 1px solid rgba(64, 143, 149, 1);
+    position: absolute;
+    width: 100%;
+    // height: 100%;
+    bottom: rem(-4);
+    left: rem(5);
+    top: rem(4);
+    z-index: -1;
+}
+
+
+
+
+
+
+.page-form__btn::after{
+    content: "";
+    background: #FFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+}
+
+.page-form__btn:hover::after{
+    transform: scale(1, 1);
+}
+
+.page-form__btn span{
+    padding-right: rem(16);
+
+
+    font-size: rem(14);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px; /* 157.143% */
+    white-space: nowrap;
+
+    color: #FFF;
+font-family: "Noto Sans JP";
+
+   
+}
+
+.page-form__btn span:hover{
+    color: rgba(64, 143, 149, 1);
+}
+
+.page-form__btn span::first-letter{
+
+    text-transform: uppercase;
+    
+}
+
+.page-form__arrow{
+    position: relative;
+}
+
+
+.page-form__arrow::before{
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    content: "";
+    display: block;
+    height: 0.0625rem;
+    position: absolute;
+    right: 3.0625rem;
+    top: 45%;
+    left: 164%;
+    transform: rotate(45deg);
+    transition: 0.3s;
+    width: 0.625rem;
+}
+
+
+.page-form__arrow::after{
+   
+
+
+background-color: #FFFFFF;
+border-radius: 10px;
+content: "";
+display: block;
+height: 0.0625rem;
+position: absolute;
+right: 3.125rem;
+top: 60%;
+left: 100%;
+transform: translateY(-50%);
+transition: 0.3s;
+width: 2.5rem;
+
+}
+
+.page-form__btn:hover .page-form__arrow::after{
+   background-color: rgba(64, 143, 149, 1);
+   border-radius: 10px;
+   content: "";
+   display: block;
+   height: 0.0625rem;
+   position: absolute;
+   right: 3.125rem;
+   top: 60%;
+   left: 100%;
+   transform: translateY(-50%);
+   transition: 0.3s;
+   width: 2.5rem;
+    
+}
+
+.page-form__btn:hover .page-form__arrow::before{
+    background-color: rgba(64, 143, 149, 1);
+    
+    border-radius: 10px;
+    content: "";
+    display: block;
+    height: 0.0625rem;
+    position: absolute;
+    right: 3.0625rem;
+    top: 45%;
+    left: 164%;
+    transform: rotate(45deg);
+    transition: 0.3s;
+    width: 0.625rem;
+ }
+
+
+ .page-form__btn:hover .page-form__arrow{
+    color:rgba(64, 143, 149, 1) ;
+ }
+
+
+
+
+
+
+
+.page-form{
+    text-align: center;
+}
+
+.page-form__btn.page-form__btn-inner{
+    padding-left: rem(55);
+}

@@ -1,0 +1,61 @@
+@use "global" as *;
+
+.mv{
+    height: 100vh;
+    position: relative;
+}
+
+
+.mv__header{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 2;
+}
+
+.mv__tittle{
+color: #FFF;
+font-family: Lato;
+font-size: rem(40);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+letter-spacing:0.54em ;
+text-indent: 0.5em;
+text-transform: uppercase;
+@include mq("md"){
+    font-size: rem(80);
+}
+}
+
+.mv__subtittle{
+color: #FFF;
+font-family: Gotu;
+font-size: rem(20);
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+text-align: center;
+}
+
+.mv__inner{
+    height: inherit;
+}
+
+.mv__swiper{
+    height: inherit;
+}
+
+.mv__img{
+    aspect-ratio: 375/667;
+    object-fit: cover;
+    @include mq("md"){
+        aspect-ratio: 1440/768;
+    }
+}
+
+.mv__img img{
+    height: 100vh;
+    object-fit: cover;
+}

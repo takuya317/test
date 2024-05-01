@@ -1,0 +1,199 @@
+@use "global" as *;
+
+.information-page{
+    position: relative;   
+}
+
+.information-page__inner{
+    position: relative;
+}
+
+.information-page__items{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.information-page__item{
+   background-color: rgba(221, 240, 241, 1);
+    width: rem(102);
+    padding-top: rem(10);
+    padding-bottom: rem(10);
+   @include mq("md"){
+    padding-top: rem(13);
+    padding-bottom: rem(13);
+    width: rem(300);
+   }
+}
+
+
+.information-page__container{
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+    justify-content: center;
+}
+
+.information-page__container span{
+    font-size: rem(14);
+    text-align: center;
+    @include mq("md"){
+        text-align: left;
+    color: var(--greenaccent, #408F95);
+    font-family: "Noto Sans JP";
+    font-size: rem(24);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    }
+}
+
+
+.information-page__asirai1{
+    display: none;
+    @include mq("md"){
+    display: block;
+    width: rem(64);
+    height: rem(64);
+    background: url("../images/common/kuzira1s.png");
+    background-size: contain;
+    }
+}
+
+.information-page__asirai2{
+    display: none;
+    @include mq("md"){
+        display: block;
+    width: rem(64);
+    height: rem(64);
+    background: url("../images/common/kuzira2.png");
+    background-size: contain;
+    }
+}
+
+.information-page__asirai3{
+    display: none;
+    @include mq("md"){
+        display: block;
+    width: rem(64);
+    height: rem(64);
+    background: url("../images/common/kuzira3.png");
+    background-size: contain;
+    }
+}
+
+
+.information-page__item:hover,
+.information-page__item.is-active{
+
+    .information-page__asirai1{
+        background: url("../images/common/kuzira1.png");
+    }
+
+    .information-page__asirai2{
+        background: url("../images/common/kuzira1.png");
+    }
+
+    .information-page__asirai3{
+        background: url("../images/common/kuzira1.png");
+    }
+}
+
+.information-page__item:hover span,
+.information-page__item.is-active span{
+    color: #FFF;
+
+}
+
+.information-page__item:hover,
+.information-page__item.is-active{
+    background: var(--greenaccent, #408F95);
+
+}
+
+// ここから下はカード
+
+.information-page__cards{
+ 
+    @include mq("md"){
+        margin-top: rem(24);
+        }
+    
+}
+
+.information-page__wrap{
+    @include mq("md"){
+        width: 47.6%;
+        
+    }
+}
+
+
+.information-page__card{
+    margin-top: rem(16);
+    padding: rem(24);
+    text-align: left;
+    border: rem(1) solid var(--greenaccent, #408F95);
+    @include mq("md"){
+        // width: 40%;
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        gap: 4.8%;
+        
+    }
+}
+
+.information-page__card.is-active{
+    display: none;
+
+}
+
+
+.information-page__tittle{
+    padding-bottom: rem(8);
+    line-height: 1;
+    border-bottom: rem(1) solid var(--greenaccent, #408F95);
+    @include mq("md"){
+    
+    }
+}
+
+.information-page__text{
+    
+    margin-top: rem(8);
+    padding-bottom: rem(8);
+    color: #000;
+    font-family: "Noto Sans JP";
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+    @include mq("md"){
+       letter-spacing: 0.001em;
+ 
+    }
+}
+
+.information-page__img{
+    @include mq("md"){
+        width: 47.6%;
+    }
+}
+
+.information-page__img img{
+    object-fit: cover;
+    aspect-ratio: 297/189;
+    @include mq("md"){
+        aspect-ratio:492/313 ;
+    }
+}
+
+.information-page__br{
+    display: block;
+    @include mq("md"){
+       display: none;
+    }
+}
+

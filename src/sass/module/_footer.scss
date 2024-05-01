@@ -90,7 +90,8 @@
 }
 
 .footer.footer--error{
-    padding-top: rem(165);
+    padding-top: rem(128);
+    @include mq("md"){ padding-top: rem(165);}
 }
 
 
