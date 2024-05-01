@@ -4,7 +4,6 @@
 
 }
 
-
 .about__inner{
     max-width: rem(600);
     position: relative;
@@ -92,9 +91,9 @@
     z-index: 3 ;
     display: flex; 
     gap: rem(40);
+    align-items: center;
     }
 }
-
 
 .about__head{
     text-align: left;
@@ -107,7 +106,7 @@
     line-height: 1; /* 100% */
     white-space: nowrap;
 
-@include mq("md"){
+    @include mq("md"){
     color: #FFF;
     font-size: rem(80);
     line-height: 1.25; /* 125% */
@@ -160,8 +159,7 @@
     @include mq("md"){
         display: block;
        position: absolute;
-   
-     right: calc(50.2% - min(48vw,40rem));
+       right: calc(50.2% - min(48vw,40rem));
         bottom: rem(-88);
         width:rem(194) ;
         height: rem(181); 
@@ -169,5 +167,10 @@
     }
 }
 
-
- 
+.about__img2--sakana{
+    @include mq("md"){
+        width:rem(301) ;
+        height: rem(138); 
+        bottom: -27%;
+    }
+}

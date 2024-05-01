@@ -2,6 +2,7 @@
 
 .common-fish{
     position: relative;
+    z-index: -1;
 }
 
 .common-fish::after{
@@ -10,15 +11,37 @@
     background-image: url(../images/common/sub-campaign-sakana.jpg);
     background-size: contain;
     display: inline-block;
-    top: -1.25%;
-    // ここはremでなおす
+    top: rem(-25);
     left: calc(52% - min(48vw,40rem));
     height: rem(55);
     width: rem(120);
-   z-index: -1;
    @include mq("md"){
     height: rem(138);
     width: rem(301);
     top: rem(-70);
    }
+}
+
+// 擬似要素のcss重ね合わせ
+.common-fish.information-page__fish::after{
+    top: rem(-90);
+}
+
+.common-fish.two-colums__fish::after{
+    top: rem(16);
+    @include mq("md"){
+    top: rem(-70);
+}
+}
+
+.common-fish.two-colums__fish--detail::after{
+    top: rem(-24);
+    @include mq("md"){
+    top: rem(-70);
+}
+}
+
+.common-fish.sitemap__fish::after{
+    top: rem(4);
+    left: 0;
 }

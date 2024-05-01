@@ -2,7 +2,6 @@
 
 .cards{
     row-gap: rem(40);
-    
     @include mq("md"){   
         row-gap: rem(80);
         column-gap:rem(40) ;
@@ -17,3 +16,4 @@
     margin-top: rem(0);
     }
 }
+

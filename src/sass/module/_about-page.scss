@@ -1,0 +1,166 @@
+@use "global" as *;
+
+.about-page{
+text-align: center;
+}
+
+
+.about-page__tittle{
+    @include mq("md"){
+    }
+}
+
+.about-page__inner{
+    max-width: rem(600);
+    position: relative;
+
+    @include mq("md"){  
+        text-align: center;
+        height: auto;
+    }
+}
+
+
+.about-page__imges{
+    
+    position: relative;
+    // height: auto;
+
+    @include mq("md"){
+        display: flex;
+        text-align: center;
+        width: 100%;
+    }
+
+}
+
+
+.about-page__img-left{
+   display: none;
+   
+
+    @include mq("md"){
+        display: block;
+        left: 0;
+        position: absolute;
+        width: 37.1%;
+        max-width: 100%;
+        z-index: 3;
+    
+    }
+   
+}
+
+.about-page__img-left img{
+    @include mq("md"){
+        object-fit: cover;
+        aspect-ratio: 400/604;
+    }
+}
+
+
+
+
+.about-page__img-right{
+    
+    z-index: -1;
+    @include mq("md"){
+   margin-top: 7.5%;
+   width: 81.4%;
+   margin-left: auto;
+    }
+}
+
+
+.about-page__img-right img{
+    object-fit: cover;
+    aspect-ratio: 281/186;
+    @include mq("md"){
+        aspect-ratio: 880/581;
+    }
+}
+
+
+
+
+.about-page__head{
+    color: #FFF;
+    font-family: Gotu;
+    font-size: rem(40);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+    white-space: nowrap;
+    text-align: left;
+    padding-left: rem(24);
+    position: absolute;
+    top:5.2%;
+    
+@include mq("md"){
+
+    font-size: rem(80);
+    line-height: 1.25; /* 125% */
+    margin-top: rem(0);
+    position: relative;
+}
+
+}
+
+.about-page__text{
+    text-align: left;
+    margin-top: rem(37);
+    color: var(--green, #0D2936);
+    font-family: "Noto Sans JP";
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; 
+
+@include mq("md"){
+
+    color: var(--White, #FFF);
+    font-family: "Noto Sans JP";
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 400;
+    width: rem(400);
+    line-height: 1.5; /* 150% */
+    margin-left: rem(0);
+    margin-top: rem(0);
+    }
+}
+
+
+.about-page__container{
+    position: static;
+
+    @include mq("md"){
+    position: absolute;
+    top: 30.5%;
+    right: 3.9%;
+    z-index: 3 ;
+    display: flex; 
+    gap: rem(45);
+    align-items: center;
+    }
+
+}
+
+
+
+.about-page__img2{
+    display: none;
+    @include mq("md"){
+    display: block;
+    position: absolute;  
+    right: calc(50.2% - min(48vw,40rem));
+    bottom: rem(-180);
+    width:rem(301) ;
+    height: rem(138); 
+    z-index: 3;
+    }
+}
+
+
+
+ 

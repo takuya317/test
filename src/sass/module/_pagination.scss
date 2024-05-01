@@ -28,6 +28,7 @@
     border: rem(1) solid var(--greenaccent, #408F95);
     height: rem(38);
     position: relative;
+  
 }
 
 .pagenation__before::before{
@@ -42,6 +43,21 @@
     transform: translate(-50%, -50%) rotate(135deg);
     width: 0.8rem;
 }
+
+.pagenation__before:hover,
+.pagenation__after:hover
+{
+    background-color: #408F95;
+    transition: 0.3s;
+}
+
+.pagenation__before:hover::before,
+.pagenation__after:hover::after,
+{
+    border-bottom: 0.0625rem solid white;
+    border-right: 0.0625rem solid white;
+}
+
 
 .pagenation__number{
    display: flex;
@@ -86,9 +102,13 @@ background: var(--greenaccent, #408F95);
     width: 0.8rem;
 }
 
-.pagenation__number a.pagenation__number--pc{
+.pagenation__number a.pagenation__pc{
     display: none;
     @include mq("md"){
         display: inline-block;
     }
+}
+
+.pagenation.pagenation--detail{
+    gap:rem(82) ;
 }

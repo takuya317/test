@@ -1,10 +1,8 @@
 @use "global" as *;
 
 .page-form__wrap {
-    
     padding-bottom: rem(24);
     border-bottom: rem(1) dashed #408F95 ;
-
 
     @include mq(md){
         display: flex;
@@ -16,7 +14,6 @@
     margin-top: rem(20);
 
     @include mq(md){
-
         margin-top: rem(38);
     }
 }
@@ -32,8 +29,6 @@
 }
 
 .page-form__label{
-    // display: flex;
-    // align-items: center;
 
     color: var(--green, #0D2936);
 font-family: "Noto Sans JP";
@@ -340,20 +335,19 @@ line-height: normal;
 // ボタン
 
 .page-form__btn{
+    margin-left: auto;
+    margin-right: auto;
     margin-top: rem(20);
     width:rem(206) ;
-    
     display: inline-block;
     line-height: 1;
-
     @include mq(md){
         margin-top: rem(34);
     }
-    
 }
 
 
-.page-form__btn a{
+.page-form__btn{
     display: inline-block;
     background-color: rgba(64, 143, 149, 1);
     position: relative;
@@ -371,7 +365,7 @@ line-height: normal;
     color: rgba(64, 143, 149, 1);
 }
 
-.page-form__btn a::before{
+.page-form__btn::before{
     content: "";
     border: 1px solid rgba(64, 143, 149, 1);
     position: absolute;
@@ -388,7 +382,7 @@ line-height: normal;
 
 
 
-.page-form__btn a::after{
+.page-form__btn::after{
     content: "";
     background: #FFF;
     position: absolute;
@@ -403,11 +397,11 @@ line-height: normal;
     z-index: -1;
 }
 
-.page-form__btn a:hover::after{
+.page-form__btn:hover::after{
     transform: scale(1, 1);
 }
 
-.page-form__btn a span{
+.page-form__btn span{
     padding-right: rem(16);
 
 
@@ -427,7 +421,7 @@ font-family: "Noto Sans JP";
     color: rgba(64, 143, 149, 1);
 }
 
-.page-form__btn a span::first-letter{
+.page-form__btn span::first-letter{
 
     text-transform: uppercase;
     
@@ -473,7 +467,7 @@ width: 2.5rem;
 
 }
 
-.page-form:hover .page-form__arrow::after{
+.page-form__btn:hover .page-form__arrow::after{
    background-color: rgba(64, 143, 149, 1);
    border-radius: 10px;
    content: "";
@@ -489,7 +483,7 @@ width: 2.5rem;
     
 }
 
-.page-form:hover .page-form__arrow::before{
+.page-form__btn:hover .page-form__arrow::before{
     background-color: rgba(64, 143, 149, 1);
     
     border-radius: 10px;
@@ -506,7 +500,7 @@ width: 2.5rem;
  }
 
 
- .page-form:hover .page-form__btn a span{
+ .page-form__btn:hover .page-form__arrow{
     color:rgba(64, 143, 149, 1) ;
  }
 
@@ -520,6 +514,6 @@ width: 2.5rem;
     text-align: center;
 }
 
-.page-form__btn a.page-form__btn-inner{
+.page-form__btn.page-form__btn-inner{
     padding-left: rem(55);
 }

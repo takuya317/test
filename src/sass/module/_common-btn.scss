@@ -1,17 +1,19 @@
 @use "global" as *;
 
+
+
 .common-btn {
     position: relative;
     display: inline-block;
     font-size: rem(14);
     font-family: $base-font-family;
     font-weight: $regular;
-    color: $white;
+    color: $green;
     width: rem(202);
-    background-color: $green;
+    background-color: $white;
     line-height: 1;
     padding: rem(19) rem(88) rem(19) rem(40);
-    border: rem(1) solid $green;
+    border: rem(1) solid $white;
     white-space: nowrap;
     z-index: 1;
 }
@@ -22,7 +24,7 @@
 .common-btn::before {
     position: absolute;
     content: '';
-    border: rem(1) solid $green;
+    border: rem(1) solid $white;
     width: 100%;
     max-width: rem(202);
     height: rem(54);
@@ -41,7 +43,7 @@
     /*下線の形状*/
     width: 20%;
     height: rem(1);
-    background: $white;
+    background: $green;
     // /*アニメーションの指定*/
     // transition: all .3s;
 }
@@ -55,7 +57,7 @@
     /*矢印の形状*/
     width: 4%;
     height: rem(1);
-    background: $white;
+    background: $green;
     transform: rotate(40deg);
     // /*アニメーションの指定*/
     // transition: all .3s;
@@ -70,13 +72,13 @@
     bottom: 0;
     width: 0;
     display: block;
-    background-color: $white;
+    background-color: $green;
     z-index: -1;
     transition: 0.2s;
 }
 
 .common-btn:hover {
-    color: $green;
+    color: $white;
 }
 
 .common-btn:hover::after {
@@ -84,26 +86,26 @@
 }
 
 .common-btn:hover .common-btn__arrow::after {
-    background-color: $green;
+    background-color: $white;
   }
 
 .common-btn:hover .common-btn__arrow::before {
-    background-color: $green;
+    background-color: $white;
   }
 
 
 
 
 .common-btn.common-btn--reverse {
-    background-color: $white;
-    color: $green;
-    border: rem(1) solid $white;
+    background-color: $green;
+    color: $white;
+    border: rem(1) solid $green;
 }
 
 .common-btn.common-btn--reverse::before {
     position: absolute;
     content: '';
-    border: rem(1) solid $white;
+    border: rem(1) solid $green;
     width: 100%;
     max-width: rem(202);
     height: rem(54);
@@ -121,7 +123,7 @@
     /*下線の形状*/
     width: 20%;
     height: rem(1);
-    background: $green;
+    background: $white;
     // /*アニメーションの指定*/
     // transition: all .3s;
 }
@@ -135,7 +137,7 @@
     /*矢印の形状*/
     width: 4%;
     height: rem(1);
-    background: $green;
+    background: $white;
     transform: rotate(40deg);
     // /*アニメーションの指定*/
     // transition: all .3s;
@@ -149,13 +151,13 @@
     bottom: 0;
     width: 0;
     display: block;
-    background-color: $green;
+    background-color: $white;
     z-index: -1;
     transition: 0.2s;
 }
 
 .common-btn.common-btn--reverse:hover {
-    color: $white;
+    color: $green;
 }
 
 .common-btn.common-btn--reverse:hover::after {
@@ -163,9 +165,9 @@
 }
 
 .common-btn.common-btn--reverse:hover .common-btn__arrow::after {
-    background-color: $white;
+    background-color: $green;
   }
 
 .common-btn--reverse:hover .common-btn__arrow::before {
-    background-color: $white;
+    background-color: $green;
   }

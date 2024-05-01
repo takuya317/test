@@ -8,10 +8,10 @@ $(".js-humburger").click(function(){
       $("html,body").css("overflow", "");
       
   } else {
-    $('.js-humburger').addClass("is-active");
-    $(".js-sp-nav").fadeIn();
-    $(".header").addClass("is-active");
-    $("html,body").css("overflow", "hidden");
+      $('.js-humburger').addClass("is-active");
+      $(".js-sp-nav").fadeIn();
+      $(".header").addClass("is-active");
+      $("html,body").css("overflow", "hidden");
   }
 
   $(window).on('resize', function () {
@@ -140,10 +140,8 @@ box.each(function(){
 
         if (number === "tab01") {
           $('.js-sub-campaign-card').removeClass('is-active');
-        }else{
-          
-        $('#' + number).removeClass('is-active');
-        
+        }else{         
+        $('#' + number).removeClass('is-active');   
         }
     });
 });
@@ -166,34 +164,29 @@ jQuery(function ($) {
 
         $('.js-information-page__card').addClass('is-active');
         $(this).addClass('is-active');
-        var number = $(this).data("number");
-
-        
-          
+        // ここのthisは実際にクリックした.js-information-page__itemを意味する
+        var number = $(this).data("number");       
         $('#' + number).removeClass('is-active');
     });
 });
 
 
 // モーダルのページ
-
-
 jQuery(function ($) {
   $(".js-modal-open").on("click", function (e) {
           e.preventDefault();
-          var target = $(this).data("target");
-          var modal  = document.getElementById(target);
-          $(modal).fadeIn();
+          var imagePath = $(this).attr('src');
+          $('.gallery__img img').attr('src', imagePath);
+          $('.gallery__modal').addClass('is-open');
           $("html,body").css("overflow", "hidden");
+      });
+
+      $(".gallery__modal").on("click", function () {
+        $(this).removeClass('is-open')
+        $("html,body").css("overflow", "auto");
       });
   });
   
-
-  $(".js-modal").on("click", function () {
-      $(".js-modal").fadeOut();
-      $("html,body").css("overflow", "initial");
-  });
-
 
 // アコーディング
   jQuery(function ($) {
@@ -203,12 +196,34 @@ jQuery(function ($) {
     });
 });
 
-
 // toggle triangle
 jQuery(function ($) {
   $('.js-two-colums__year').on('click', function () {
-    $(this).toggleClass('is-active');
-    
-
+    $(this).toggleClass('is-active');  
   });
+});
+
+
+// contact ページ
+$('.js-page-form').submit(function(event) {
+  var hasEmptyFields = false; // 空のフィールドがあるかどうかを示すフラグ
+
+  // 必須フィールドを持つフォーム内のすべての入力フィールドをチェック
+  $(this).find('[required]').each(function() {
+      // 入力フィールドが空の場合
+      if ($(this).val() === '') {
+          hasEmptyFields = true; // 空のフィールドが見つかったことを示すフラグを立てる
+          // $(this).addClass('empty-field'); 
+          // requiredなのに入力されていないフィールドにクラスを付与する
+          return false; // ループから抜ける
+      }
+  });
+
+  // 空のフィールドがあるかどうかに応じてクラスを追加または削除する
+  if (hasEmptyFields) {
+      $('.page-contact__error').addClass('is-active'); 
+  } else {
+      $('.page-contact__error').removeClass('is-active'); 
+  }
+
 });

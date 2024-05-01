@@ -37,19 +37,19 @@ color: rgba(64, 143, 149, 1);
     text-transform: uppercase;
 }
 
-.section-header__engtittle--color{
+.section-header__engtittle--white{
     @include mq("md"){
         color: #FFF ;
         }
 }
 
-.section-header__engtittle--color::first-letter{
+.section-header__engtittle--white::first-letter{
     @include mq("md"){
         color: #FFF ;
         }
 }
 
-.section-header__jatittle--color{
+.section-header__jatittle--white{
     @include mq("md"){
         color: #FFF ;
         }

@@ -7,3 +7,13 @@
        margin-top: rem(140);
     }
 }
+
+.layout-contact--reg{
+    margin-top: rem(100);
+}
+
+.layout-contact.layout-contact--sitemap{
+
+    margin-top: rem(90);
+    @include mq("md"){margin-top: rem(128);}
+}

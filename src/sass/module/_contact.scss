@@ -48,12 +48,12 @@
       }
 }
 
-.contact__textes p:first-child{
-    padding-right: rem(7);
-    @include mq("md"){
-        padding-right: rem(23);
-      }
-}
+// .contact__textes p:first-child{
+//     padding-right: rem(0);
+//     @include mq("md"){
+//         padding-right: rem(23);
+//       }
+// }
 
 .contact__textes p:last-child{
     @include mq("md"){

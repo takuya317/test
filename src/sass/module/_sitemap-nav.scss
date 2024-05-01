@@ -1,0 +1,97 @@
+@use "global" as *;
+
+.sitemap-nav{
+    display: flex;
+    justify-content: space-between;
+    @include mq("md"){  
+        gap: rem(138);
+        padding-left: rem(0);
+        justify-content: initial;    
+    }
+}
+
+
+.sitemap-nav__item--reg{
+    margin-top: rem(16);
+    position: relative;
+    font-weight: 700;
+}
+
+.sitemap-nav__item--reg::before{
+    background-image: url(../images/common/hitode2.jpg);
+    background-size: contain;
+    content: "";
+    display: block;
+    height: rem(18);
+    left: rem(-4);
+    position: absolute;
+    top: rem(11);
+    width: rem(18);
+}
+
+
+.sitemap-nav a{
+    display: block;
+    color: var(--green, #0D2936);
+    font-family: "Noto Sans JP";
+    font-size: rem(16);
+    font-style: normal;
+    line-height: rem(18); 
+    transition: opacity 0.3s;
+    padding-top: rem(12);
+    padding-bottom: rem(12);
+    padding-left: rem(22);
+    @include mq("md"){  
+    padding-left: rem(18);}
+
+}
+
+.sitemap-nav__item:nth-child(3){
+    white-space: nowrap;
+} 
+
+
+.sitemap-nav__item a:hover{
+    opacity: 0.7;
+}
+
+
+.sitemap-nav__img{
+    content: url(../images/common/hitode.jpg);
+    height: 1.125rem;
+    width: 1.125rem;
+}
+
+
+.sitemap-nav__inner{
+    @include mq("md"){
+        display: flex;
+        justify-content: space-between;
+        width: 50%;
+        margin-top: rem(-6);
+       gap: rem(126);
+    }
+}
+
+.sitemap-nav__items:last-child{
+    margin-top: rem(15);
+    @include mq("md"){
+        margin-top: rem(0);
+    }
+}
+
+.sitemap-nav__items:last-child{
+    margin-top: rem(15);
+        @include mq("md"){
+            margin-top: rem(0);
+        }
+}
+
+.sitemap-nav__br{
+    @include mq("md"){
+      display: none;      
+    }
+}
+
+
+

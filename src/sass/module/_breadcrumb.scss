@@ -34,3 +34,32 @@
     transform: translate(-50%, -50%) rotate(-45deg);
     width: 0.375rem;
 }
+
+.breadcrumb__current.breadcrumb__current--detail{
+    display: none;
+    @include mq("md"){
+    display: inline-block;
+    }
+}
+
+.breadcrumb__current.breadcrumb__current--privacy::before
+{
+    left: -7%;
+}
+
+
+.breadcrumb__inner.breadcrumb__inner--error{
+    color: white;
+
+}
+
+.breadcrumb__current.breadcrumb__current--error::before{
+    left: -40%;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+
+}
+
+.breadcrumb__current.breadcrumb__current--error{
+    display: none;
+}

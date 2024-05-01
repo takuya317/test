@@ -1,0 +1,43 @@
+@use "global" as *;
+
+.campaign-page{
+   
+}
+
+
+.campaign-page__tab{
+
+}
+
+.campaign-page__tittle{
+    display: flex;
+    position: relative;   
+}
+
+
+
+.campaign-page__cards{
+     margin-top: rem(39);
+    padding-left: rem(33);
+    padding-right: rem(33);
+    @include mq("md"){
+        padding-left: rem(0);
+        padding-right: rem(0);
+    }  
+}
+
+
+
+.campaign-page__card:not(:first-child){
+    margin-top: rem(39);
+    @include mq("md"){     
+        margin-top: rem(0);       
+    }
+}
+
+.campaign-page__pagenation{
+    margin-top: rem(77);
+    @include mq("md"){
+        margin-top: rem(80);
+    }
+}
