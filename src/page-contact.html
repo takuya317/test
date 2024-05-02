@@ -24,9 +24,9 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
   <link rel="stylesheet" href="./assets/css/style.css" />
   <!-- JavaScript -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-  <script src="assets/js/jquery.inview.min.js"></script>
+  <script defer src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="assets/js/jquery.inview.min.js"></script>
   <script defer src="assets/js/script.js"></script>
 </head>
 <body>
@@ -177,69 +177,68 @@
       <span class="breadcrumb__current breadcrumb__current--privacy">
         お問い合わせ
       </span>
-      <span class="breadcrumb__current breadcrumb__current--error">
-        お問い合わせエラー
-      </span>
     </div>
   </div>
-  <section class="page-contact layout-page-contact">
+  <div class="page-contact layout-page-contact">
       <div class="page-contact__inner inner">
         <div class="page-contact__fish--detail common-fish"></div>
           <p class="page-contact__error">※必須項目が入力されていません。<br class="page-contact__br">入力してください。</p>
           <form class="page-contact__form page-form js-page-form" action="" method="get">
-            <div class="page-form__wrap">
-              <dt class="page-form__label">お名前<span>必須</span></dt>
-              <dd class="page-form__input page-form-input">
-                <input type="text" name="name" required placeholder="沖縄 太郎">
-              </dd>
-            </div>
-            <div class="page-form__wrap">
-              <dt class="page-form__label">メールアドレス<span>必須</span></dt>
-              <dd class="page-form__input page-form-input">
-                <input type="email" name="email" required placeholder="aaa000@ggmail.com">
-              </dd>
-            </div>
-            <div class="page-form__wrap">
-              <dt class="page-form__label">電話番号<span>必須</span></dt>
-              <dd class="page-form__input page-form-input">
-                <input type="tel" name="tel" required placeholder="000-0000-0000">
-              </dd>
-            </div>     
-            <div class="page-form__wrap">
-              <dt class="page-form__label">お問合せ項目<span>必須</span></dt>
-              <dd class="page-form__checkbox " >
-                  <label><input type="checkbox" name="sns" value="ダイビング講習" checked><span>ダイビング講習について</span></label>
-                  <label><input type="checkbox" name="sns" value="ファンダイビング"><span>ファンダイビングについて</span></label>
-                  <label><input type="checkbox" name="sns" value="体験ダイビング"><span>体験ダイビングについて</span></label>     
-              </dd>
-            </div>
-            <div class="page-form__wrap">
-              <dt class="page-form__label">キャンペーン</dt>
-              <dd class="page-form__select">
-                  <select name="campaign">
-                    <option hidden>キャンペーン内容を選択</option>
-                    <option value="ファンダイビング">ファンダイビング</option>
-                    <option value="ライセンス講習">ライセンス講習</option>
-                    <option value="体験ダイビング">体験ダイビング</option>
-                  </select>
+            <dl class="page-contact__dl">
+              <div class="page-form__wrap">
+                <dt class="page-form__label">お名前<span>必須</span></dt>
+                <dd class="page-form__input page-form-input">
+                  <input type="text" name="name" required placeholder="沖縄 太郎">
                 </dd>
-            </div>
-            <div class="page-form__wrap">
-              <dt class="page-form__label">お問合せ内容<span>必須</span></dt>
-              <dd class="page-form__textarea">
-                  <textarea name="message" required></textarea>
+              </div>
+              <div class="page-form__wrap">
+                <dt class="page-form__label">メールアドレス<span>必須</span></dt>
+                <dd class="page-form__input page-form-input">
+                  <input type="email" name="email" required placeholder="aaa000@ggmail.com">
                 </dd>
-            </div>
-            <div class="page-form__privacy">
-                <label><input type="checkbox" name="consent" value="privacy"><span>個人情報の取り扱いについて同意のうえ
-                  送信します。</span></label>
-            </div>
+              </div>
+              <div class="page-form__wrap">
+                <dt class="page-form__label">電話番号<span>必須</span></dt>
+                <dd class="page-form__input page-form-input">
+                  <input type="tel" name="tel" required placeholder="000-0000-0000">
+                </dd>
+              </div>     
+              <div class="page-form__wrap">
+                <dt class="page-form__label">お問合せ項目<span>必須</span></dt>
+                <dd class="page-form__checkbox " >
+                    <label><input type="checkbox" name="sns" value="ダイビング講習" checked><span>ダイビング講習について</span></label>
+                    <label><input type="checkbox" name="sns" value="ファンダイビング"><span>ファンダイビングについて</span></label>
+                    <label><input type="checkbox" name="sns" value="体験ダイビング"><span>体験ダイビングについて</span></label>     
+                </dd>
+              </div>
+              <div class="page-form__wrap">
+                <dt class="page-form__label">キャンペーン</dt>
+                <dd class="page-form__select">
+                    <select name="campaign">
+                      <option hidden>キャンペーン内容を選択</option>
+                      <option value="ファンダイビング">ファンダイビング</option>
+                      <option value="ライセンス講習">ライセンス講習</option>
+                      <option value="体験ダイビング">体験ダイビング</option>
+                    </select>
+                  </dd>
+              </div>
+              <div class="page-form__wrap">
+                <dt class="page-form__label">お問合せ内容<span>必須</span></dt>
+                <dd class="page-form__textarea">
+                    <textarea name="message" required></textarea>
+                  </dd>
+              </div>
+              <div class="page-form__privacy">
+                  <label><input type="checkbox" name="consent" value="privacy"><span>個人情報の取り扱いについて同意のうえ
+                    送信します。</span></label>
+              </div>
+            </dl>
             <button type="submit" class="page-form__btn js-submit">      
                 <span class="page-form__arrow"> Send</span>
             </button>
           </form>
       </div>
-  </section>
+  </div>
   <footer class="footer layout-footer layout-footer--contact">
     <div class="footer__inner inner">
       <div class="footer__head">

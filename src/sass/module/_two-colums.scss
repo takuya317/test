@@ -17,7 +17,8 @@
 }
 
 
-    .two-colums__inner{
+    .two-colums__inner,
+    .two-colums__inner--single{
         position: relative;
         @include mq("md"){
             display: flex;
@@ -26,15 +27,9 @@
     }
 
 .two-colums__inner.inner{
-
-    padding-left: rem(21);
-    padding-right: rem(21);
-
-    @include mq("md"){
-      padding-left:rem(15) ;
-    padding-right: rem(15);
+        padding-left: rem(21);
+        padding-right: rem(21);
     }
-}
 
 
 .two-colums__inner--single.inner{
@@ -69,8 +64,8 @@
 
 
 .two-colums__right{
-    padding-left: rem(25);
-    padding-right: rem(25);
+    padding-left: rem(19);
+    padding-right: rem(19);
     margin-top: rem(78);
     @include mq("md"){
     width: 27.05%;    
@@ -79,6 +74,9 @@
     margin: 0;
     }
 }
+
+
+
 
 .two-colums__img{
     width: 47.1%;
@@ -123,7 +121,7 @@
 }
 
 .two-colums__kutikomi{
-    margin-top: rem(78);
+    margin-top: rem(80);
     text-align: center;
     @include mq("md"){
     margin-top: rem(80);
