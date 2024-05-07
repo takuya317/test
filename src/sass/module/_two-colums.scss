@@ -215,7 +215,7 @@
 }
 
 
-.two-colums__year.is-active li{
+.two-colums__year.is-active li:not(:first-child){
     display: none;
 }
 

@@ -21,23 +21,19 @@
 .page-form__wrap:nth-of-type(6){
     padding-bottom: rem(18);
 
-
     @include mq(md){
         padding-bottom: rem(34);
-
     }
 }
 
 .page-form__label{
-
     color: var(--green, #0D2936);
-font-family: "Noto Sans JP";
-font-size: rem(16);
-font-style: normal;
-font-weight: 700;
-line-height: normal;
-text-align: left;
-
+    font-family: "Noto Sans JP";
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: left;
 @include mq(md){
     width: 31.43%;
 }
@@ -46,16 +42,15 @@ text-align: left;
 .page-form__label span{
     padding: rem(2) rem(12) rem(2) rem(16);
     color: #FFF;
-font-family: "Noto Sans JP";
-font-size: rem(12);
-font-style: normal;
-font-weight: 400;
-line-height: normal;
-text-align: center;
-letter-spacing: 0.4em;
-background: #C94800;
-margin-left: rem(8);
-
+    font-family: "Noto Sans JP";
+    font-size: rem(12);
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    letter-spacing: 0.4em;
+    background: #C94800;
+    margin-left: rem(8);
 
 }
 
@@ -65,7 +60,6 @@ margin-left: rem(8);
     
     @include mq(md){
         margin-top: 0;
-      
     }
 }
 
@@ -263,6 +257,7 @@ line-height: normal;
 }
 
 .page-form__privacy{
+    display: block;
     margin: 0 auto;
     width: 81.739%;
     position: relative;
@@ -403,18 +398,13 @@ line-height: normal;
 
 .page-form__btn span{
     padding-right: rem(16);
-
-
     font-size: rem(14);
     font-style: normal;
     font-weight: 400;
     line-height: 22px; /* 157.143% */
     white-space: nowrap;
-
     color: #FFF;
-font-family: "Noto Sans JP";
-
-   
+    font-family: "Noto Sans JP";
 }
 
 .page-form__btn span:hover{
