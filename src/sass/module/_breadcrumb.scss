@@ -5,7 +5,7 @@
 }
 
 .breadcrumb__inner{
-    padding-top: rem(8);
+    
     color: var(--green, #0D2936);
     font-family: "Noto Sans JP";
     font-size: rem(14);
@@ -50,8 +50,13 @@
 
 .breadcrumb__inner.breadcrumb__inner--error{
     color: white;
+  
 
 }
+.breadcrumb.breadcrumb--error{
+    padding-top: rem(8);
+}
+
 
 .breadcrumb__current.breadcrumb__current--error::before{
     left: -40%;

@@ -20,6 +20,7 @@
     width: rem(102);
     padding-top: rem(10);
     padding-bottom: rem(10);
+    cursor: pointer;
    @include mq("md"){
     padding-top: rem(13);
     padding-bottom: rem(13);
@@ -92,11 +93,13 @@
     }
 
     .information-page__asirai2{
-        background: url("../images/common/kuzira1.png");
+        background: url("../images/common/kuzi55.png");
+        background-size: contain;
     }
 
     .information-page__asirai3{
-        background: url("../images/common/kuzira1.png");
+        background: url("../images/common/kuzi66.png");
+        background-size: contain;
     }
 }
 

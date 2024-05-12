@@ -131,31 +131,31 @@ box.each(function(){
 
 
   // タブ
-  jQuery(function ($) {
-    $('.js-tab-item').on('click', function () {
-        $('.js-tab-item').removeClass('is-active');
-        $('.js-sub-campaign-card').addClass('is-active');
-        $(this).addClass('is-active');
-        var number = $(this).data("number");
+//   jQuery(function ($) {
+//     $('.js-tab-item').on('click', function () {
+//         $('.js-tab-item').removeClass('is-active');
+//         $('.js-sub-campaign-card').addClass('is-active');
+//         $(this).addClass('is-active');
+//         var number = $(this).data("number");
 
-        if (number === "tab01") {
-          $('.js-sub-campaign-card').removeClass('is-active');
-        }else{         
-        $('#' + number).removeClass('is-active');   
-        }
-    });
-});
+//         if (number === "tab01") {
+//           $('.js-sub-campaign-card').removeClass('is-active');
+//         }else{         
+//         $('#' + number).removeClass('is-active');   
+//         }
+//     });
+// });
 
 
 // ページネーション
-jQuery(function ($) {
-  $('.js-pagenation-number').on('click', function () {
-      $('.js-pagenation-number').removeClass('is-active');
+// jQuery(function ($) {
+//   $('.js-pagenation-number').on('click', function () {
+//       $('.js-pagenation-number').removeClass('is-active');
      
-      $(this).addClass('is-active');
+//       $(this).addClass('is-active');
      
-  });
-});
+//   });
+// });
   
   // informationページのタブ
   jQuery(function ($) {

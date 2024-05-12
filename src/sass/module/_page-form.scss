@@ -87,11 +87,7 @@ background: var(--White, #FFF);
     
 }
 
-.page-form-input input:focus {
-    border: 1px solid #ccc;
-    box-shadow: none;
-    outline: none;
-}
+
 
 
 
@@ -220,11 +216,7 @@ line-height: normal;
     display: none;
 }
 
-.page-form__select select:focus {
-    border: 1px solid #ccc;
-    box-shadow: none;
-    outline: none;
-}
+
 
 // テキストエリア
 
@@ -250,11 +242,6 @@ line-height: normal;
     }
 }
 
-.page-form__textarea textarea:focus {
-    border: 1px solid #ccc;
-    box-shadow: none;
-    outline: none;
-}
 
 .page-form__privacy{
     display: block;
@@ -265,7 +252,7 @@ line-height: normal;
     margin-top: rem(38);
     text-align: left;
     @include mq(md){
-        margin-top: rem(82);
+        margin-top: rem(72);
         padding-left: rem(38);
         
         text-align: center;
@@ -286,7 +273,7 @@ line-height: normal;
 .page-form__privacy input + span::before {
     content: "";
     position: absolute;
-    top: 30%;
+    top: 50%;
     left: 0;
     transform: translateY(-50%);
     background: #fff;
@@ -304,19 +291,19 @@ line-height: normal;
     content: "";
     margin-top: rem(-2);
     position: absolute;
-    top: 60%;
-    left: 1%;
-    transform: translateY(-50%) rotate(-35deg);
+    top: 50%;
+    left: 0.7%;
+    transform: translateY(-45%) rotate(-48deg);
     display: block;
-    width: rem(10);
-    height: rem(5);
+    width: rem(15);
+    height: rem(7);
     border-bottom: rem(2) solid rgba(201, 72, 0, 1);
     border-left: rem(2) solid rgba(201, 72, 0, 1);
     transition:  .3s;
     opacity: 0;
     @include mq(md){
-        left: 18.2%;
-        top: 45%;
+        left: 18%;
+        top: 50%;
     }
     
 
@@ -337,7 +324,7 @@ line-height: normal;
     display: inline-block;
     line-height: 1;
     @include mq(md){
-        margin-top: rem(34);
+        margin-top: rem(38);
     }
 }
 

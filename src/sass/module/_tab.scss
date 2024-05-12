@@ -24,10 +24,11 @@ border: rem(1) solid var(--greenaccent, #408F95);
 width: 46.9%;
 white-space:nowrap ;
 display: inline-block;
-padding-top: rem(6);
-padding-bottom: rem(5);
-
-@include mq("md"){
+// padding-top: rem(6);
+// padding-bottom: rem(5);
+    background-color: white;
+    height: inherit;
+    @include mq("md"){
     max-width: rem(162);
 }
 }
@@ -38,5 +39,15 @@ padding-bottom: rem(5);
 }
 
 .tab__item a{
-    display: inline-block;
+    display: block;
+    height: inherit;
+    padding-top: rem(6);
+    padding-bottom: rem(5);
+
+    
+}
+
+.tab__item:hover{
+    color: var(--White, #FFF);
+    background: var(--greenaccent, #408F95);
 }

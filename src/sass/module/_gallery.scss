@@ -32,6 +32,7 @@
 .gallery__itemA{
     aspect-ratio: 492/746;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .gallery__itemA:nth-of-type(2){
@@ -44,6 +45,7 @@
 .gallery__itemB{
     aspect-ratio: 580/369;
     object-fit: cover;
+    cursor: pointer;
 }
 
 .gallery__itemB:first-child{

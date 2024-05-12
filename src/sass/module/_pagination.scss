@@ -13,13 +13,10 @@
     @include mq("md"){
         justify-content: center;
     }
-
 }
 
 .pagenation__inner{
     display: flex;
-    
-  
 }
 
 .pagenation__before{
@@ -65,10 +62,11 @@
 }
 
 .pagenation__number a{
-    display: inline-block;
+    display: flex;
     border: rem(1) solid var(--greenaccent, #408F95);
    text-align: center;
-   padding-top: rem(9);
+   justify-content: center;
+   align-items: center;
     width: rem(38);
     height: rem(38);
     line-height: 1;
@@ -78,6 +76,11 @@
  {color: rgba(255, 255, 255, 1);
 background: var(--greenaccent, #408F95);
 
+}
+
+.pagenation__number a:hover{
+    color: rgba(255, 255, 255, 1);
+background: var(--greenaccent, #408F95);
 }
 
 
@@ -105,7 +108,7 @@ background: var(--greenaccent, #408F95);
 .pagenation__number a.pagenation__pc{
     display: none;
     @include mq("md"){
-        display: inline-block;
+        display: flex;
     }
 }
 
