@@ -1,0 +1,13 @@
+@use "global" as *;
+
+.faq-lists{
+
+    display: grid;
+    gap: rem(40);
+    @include mq("md"){
+        margin: auto;
+        gap: rem(40);
+       
+    }
+
+}

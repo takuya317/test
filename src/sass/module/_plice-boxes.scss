@@ -1,0 +1,18 @@
+@use "global" as *;
+
+
+.plice-boxes{
+    display: grid;
+    gap: rem(40);
+
+    @include mq("md"){    
+    gap: rem(78);
+    }
+}
+
+.plice-boxes__item{
+    @include mq("md"){display: flex;}
+    display: block;
+    
+}
+
