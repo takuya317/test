@@ -171,6 +171,26 @@ box.each(function(){
 });
 
 
+  // informationページのタブ パラメータ
+  jQuery(function ($) {
+    const activeTab = new URLSearchParams(window.location.search).get('active-tab');
+
+    if(activeTab == 'tab2'){
+      $('[data-number="item01"]').removeClass('is-active');
+      $('[data-number="item02"]').addClass('is-active');
+      $('#item01').addClass('is-active');
+      $('#item02').removeClass('is-active');
+    }else if(activeTab == 'tab3'){
+      $('[data-number="item01"]').removeClass('is-active');
+      $('[data-number="item03"]').addClass('is-active');
+      $('#item01').addClass('is-active');
+      $('#item03').removeClass('is-active');
+    }
+    
+  });
+  
+
+
 // モーダルのページ
 jQuery(function ($) {
   $(".js-modal-open").on("click", function (e) {
