@@ -20,43 +20,75 @@
 .gallery__items{
 
     @include mq("md"){
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 0.1626fr 1fr ;
+    grid-template-rows: repeat(4,1fr);
     gap: rem(8);
+
+    grid-template-areas: 
+    "areaA areaB areaB"
+    "areaA areaC areaC"
+    "areaD areaD areaF"
+    "areaE areaE areaF";
     }
 }
 
-.gallery__items:nth-of-type(2){
-    margin-top: rem(8);
+.gallery__items img{
+    object-fit: cover;
+    cursor: pointer;
 }
 
 .gallery__itemA{
-    aspect-ratio: 492/746;
-    object-fit: cover;
+    grid-area: areaA;
     cursor: pointer;
+    
 }
 
-.gallery__itemA:nth-of-type(2){
-    margin-top: rem(8);
-    @include mq("md"){
-        margin-top:0;
-    }
+.gallery__itemA img{
+    aspect-ratio: 492/746;
 }
 
 .gallery__itemB{
+    grid-area: areaB;
+}
+
+
+.gallery__itemB img{
     aspect-ratio: 580/369;
-    object-fit: cover;
-    cursor: pointer;
 }
 
-.gallery__itemB:first-child{
-    margin-top: rem(8);
-    @include mq("md"){
-        margin-top:0;
-    }
+.gallery__itemC{
+    grid-area: areaC;
+}
+.gallery__itemC img{
+    aspect-ratio: 580/369;
 }
 
-.gallery__itemB:nth-of-type(2){
-    margin-top: rem(8);
+.gallery__itemD{
+    grid-area: areaD;
+ 
+}
+
+.gallery__itemD img{
+    aspect-ratio: 580/369;
+}
+
+.gallery__itemE{
+    grid-area: areaE;
+
+}
+
+.gallery__itemE img{
+    aspect-ratio: 580/369;
+}
+
+.gallery__itemF{
+    grid-area: areaF;
+
+}
+
+.gallery__itemF img{
+    aspect-ratio: 492/746;
 }
 
 .gallery__modal{
