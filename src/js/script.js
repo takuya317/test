@@ -210,7 +210,7 @@ jQuery(function ($) {
 
 // アコーディング
   jQuery(function ($) {
-    $('.js-faq-question').on('click', function () {
+    $('.js-faq-list-question').on('click', function () {
         $(this).next().slideToggle();
         $(this).toggleClass('is-close');
     });
