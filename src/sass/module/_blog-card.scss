@@ -20,12 +20,6 @@
     aspect-ratio: 301/201;
 }
 
-.blog-card__img.blog-card__img--detail{
-    aspect-ratio: 700/468;
-
-    margin-top: rem(24);
-    @include mq("md"){margin-top: rem(40);}
-}
 
 
 .blog-card__img:hover{
@@ -51,12 +45,6 @@
 
 
 
-.blog-card__date.blog-card__date--detail{
-    margin: 0;
-
-font-size: rem(14);
-line-height: 1.28571; /* 128.571% */
-}
 
 
 .blog-card__tittle{
@@ -72,18 +60,7 @@ line-height: 1.28571; /* 128.571% */
     border-bottom:rem(1) solid var(--greenaccent, #408F95) ;
 }
 
-.blog-card__tittle.blog-card__tittle--detail{
 
-font-size: rem(24);
-line-height: normal;
-margin-top: rem(8);
-@include mq("md"){
-
-    font-size: rem(32);
-    margin-top: rem(8);
-    padding: 0;
-}
-}
 
 .blog-card__text{
     margin-top: rem(15);
@@ -102,43 +79,3 @@ margin-top: rem(8);
     @include mq("md"){ margin-top: rem(34);}
 }
 
-.blog-card__list{
-    margin-top: rem(24);
-    @include mq("md"){ margin-top: rem(40);}
-}
-
-.blog-card__list li{
-    position: relative;
-    padding-left: rem(28);
-    color: var(--green, #0D2936);
-    font-family: "Noto Sans JP";
-    font-size: rem(16);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5; /* 150% */
-    @include mq("md"){
-    padding-left: rem(34);}
-}
-
-.blog-card__list li:not(:first-child){
-    margin-top: rem(4);
-    @include mq("md"){margin-top: rem(6);}
-}
-
-.blog-card__list li::before{
-    background-image: url(../images/common/hitode2.jpg);
-    background-size: contain;
-    content: "";
-    display: block;
-    height: rem(18);
-    position: absolute;
-    width: rem(18);
-    left: rem(0);
-    top: 0;
-
-    @include mq("md"){
-    left:rem(4);
-    top: rem(4);
-}
-  
-}
