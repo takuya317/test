@@ -4,11 +4,11 @@
     position: relative;
     background: var(--greenaccent, #408F95);
     top: rem(80);
-    
+        height: rem(358);
 
     @include mq("md"){height: rem(697);
          top: rem(90);}
-         height: 100vh;
+        
    
 }
 
