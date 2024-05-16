@@ -18,6 +18,11 @@
 
 
 .gallery__items{
+    display: flex;
+    flex-direction: column;
+    gap: rem(8);
+
+
 
     @include mq("md"){
     display: grid;
