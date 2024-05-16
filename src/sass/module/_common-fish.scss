@@ -10,6 +10,12 @@
     @include mq("md"){ z-index: -1;}
 }
 
+.common-fish.page-contact__inner{
+    z-index: 1;
+}
+
+
+
 .common-fish::after{
     content: "";
     position: absolute;
