@@ -11,7 +11,11 @@
 }
 
 
-
+.common-fish--sitemap.common-fish::after{
+    top: rem(4);
+    left: 0;
+    @include mq("md"){ display: none;}
+}
 
 
 .common-fish::after{
@@ -51,7 +55,11 @@
 }
 }
 
-.common-fish.sitemap__fish::after{
-    top: rem(4);
-    left: 0;
-}
+// .common-fish.sitemap__fish::after{
+//     top: rem(4);
+//     left: 0;
+//     @include mq("md"){
+//         display: none;
+//     }
+// }
+
