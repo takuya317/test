@@ -2,17 +2,15 @@
 
 .common-fish{
     position: relative;
-    z-index: -1;
+  
 }
 
-.common-fish.common-fish--blog{
+.common-fish--blog.common-fish::after{
     z-index: 1;
     @include mq("md"){ z-index: -1;}
 }
 
-.common-fish.page-contact__inner{
-    z-index: 1;
-}
+
 
 
 
@@ -26,6 +24,7 @@
     left: calc(52% - min(48vw,40rem));
     height: rem(55);
     width: rem(120);
+    z-index: -1;
    @include mq("md"){
     height: rem(138);
     width: rem(301);

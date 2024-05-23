@@ -1,18 +1,10 @@
 @use "global" as *;
 
-.sitemap{
-     
-    }
 
     .sitemap__inner{
-        
         max-width: rem(400);
     }
 
     .sitemap__fish{
         @include mq("md"){display: none;}
-    }
-
-    .sitemap__nav{
-
     }
