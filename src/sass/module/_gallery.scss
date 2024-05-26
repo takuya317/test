@@ -18,24 +18,35 @@
 
 
 .gallery__items{
+
     display: flex;
     flex-direction: column;
     gap: rem(8);
-
-
-
     @include mq("md"){
     display: grid;
     grid-template-columns: 1fr 0.1626fr 1fr ;
     grid-template-rows: repeat(4,1fr);
     gap: rem(8);
-
-    grid-template-areas: 
-    "areaA areaB areaB"
-    "areaA areaC areaC"
-    "areaD areaD areaF"
-    "areaE areaE areaF";
+    grid-auto-flow: dense;
+   
     }
+}
+
+
+.gallery__item{
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.gallery__item:nth-of-type(6n+1){
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.gallery__item:nth-of-type(6n+6){
+    grid-column: span 1;
+    grid-row: span 2;
+
 }
 
 .gallery__items img{
@@ -43,56 +54,16 @@
     cursor: pointer;
 }
 
-.gallery__itemA{
-    grid-area: areaA;
-    cursor: pointer;
-    
+.gallery__item img{
+    aspect-ratio: 580/369;
 }
 
-.gallery__itemA img{
+.gallery__item:nth-of-type(6n+1) img{
     aspect-ratio: 492/746;
 }
 
-.gallery__itemB{
-    grid-area: areaB;
-}
 
-
-.gallery__itemB img{
-    aspect-ratio: 580/369;
-}
-
-.gallery__itemC{
-    grid-area: areaC;
-}
-.gallery__itemC img{
-    aspect-ratio: 580/369;
-}
-
-.gallery__itemD{
-    grid-area: areaD;
- 
-}
-
-.gallery__itemD img{
-    aspect-ratio: 580/369;
-}
-
-.gallery__itemE{
-    grid-area: areaE;
-
-}
-
-.gallery__itemE img{
-    aspect-ratio: 580/369;
-}
-
-.gallery__itemF{
-    grid-area: areaF;
-
-}
-
-.gallery__itemF img{
+.gallery__item:nth-of-type(6n+6) img{
     aspect-ratio: 492/746;
 }
 
