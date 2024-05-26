@@ -90,29 +90,32 @@
 
     .information-page__asirai1{
         background: url("../images/common/kuzira1.png");
+       
     }
 
     .information-page__asirai2{
         background: url("../images/common/kuzi55.png");
         background-size: contain;
+        transition: 0.3s;
     }
 
     .information-page__asirai3{
         background: url("../images/common/kuzi66.png");
         background-size: contain;
+        transition: 0.3s;
     }
 }
 
 .information-page__item:hover span,
 .information-page__item.is-active span{
     color: #FFF;
-
+    transition: 0.3s;
 }
 
 .information-page__item:hover,
 .information-page__item.is-active{
     background: var(--greenaccent, #408F95);
-
+    transition: 0.3s;
 }
 
 // ここから下はカード

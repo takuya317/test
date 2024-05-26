@@ -53,6 +53,7 @@
 {
     border-bottom: 0.0625rem solid white;
     border-right: 0.0625rem solid white;
+    transition: 0.3s;
 }
 
 
@@ -81,6 +82,7 @@ background: var(--greenaccent, #408F95);
 .pagenation__number a:hover{
     color: rgba(255, 255, 255, 1);
 background: var(--greenaccent, #408F95);
+transition: 0.3s;
 }
 
 
