@@ -1,0 +1,91 @@
+@use "global" as *;
+
+.singleblog-card__tittle{
+    color: var(--green, #0D2936);
+    font-family: "Noto Sans JP";
+    font-size: rem(24);
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: rem(8);
+    text-align: left;
+    border-bottom:rem(1) solid var(--greenaccent, #408F95) ;
+    @include mq("md"){
+    font-size: rem(32);
+      }
+}
+
+.singleblog-card__date{
+    margin: 0;
+    font-size: rem(14);
+    line-height: 1.28571; /* 128.571% */
+    color: var(--green, #0D2936);
+    font-family: Gotu;
+    font-style: normal;
+    font-weight: 400;
+    text-align: left;
+    display: block;
+}
+
+.singleblog-card__content div{
+    margin-top: rem(40);
+}
+
+.singleblog-card__imgbig{
+    aspect-ratio: 700/468;
+    margin-top: rem(24);
+    @include mq("md"){margin-top: rem(40);}
+}
+
+.singleblog-card__content p{
+    color: var(--green, #0D2936);
+    font-family: "Noto Sans JP";
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+    text-align: left;
+    letter-spacing: 0.003em;
+    margin-top: rem(24);
+    @include mq("md"){ margin-top: rem(40);}
+}
+
+.singleblog-card__content ul{
+    margin-top: rem(24);
+    @include mq("md"){ margin-top: rem(40);
+    }
+}
+
+.singleblog-card__content ul li{
+    position: relative;
+    padding-left: rem(28);
+    color: var(--green, #0D2936);
+    font-family: "Noto Sans JP";
+    font-size: rem(16);
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.5; /* 150% */
+    @include mq("md"){
+    padding-left: rem(28);}
+}
+
+.singleblog-card__content ul li:not(:first-child){
+    margin-top: rem(4);
+    @include mq("md"){margin-top: rem(5);}
+}
+
+.singleblog-card__content ul li::before{
+    background-image: url(../images/common/hitode2.jpg);
+    background-size: contain;
+    content: "";
+    display: block;
+    height: rem(18);
+    position: absolute;
+    width: rem(18);
+    left: rem(0);
+    top: 0;
+    @include mq("md"){
+    left:rem(4);
+    top: rem(4);
+}
+}

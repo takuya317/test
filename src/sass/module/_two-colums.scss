@@ -1,8 +1,5 @@
 @use "global" as *;
 
-.two-colums{
-
-}
 
 
 .two-colums__campaign-cards{
@@ -22,14 +19,10 @@
         position: relative;
         @include mq("md"){
             display: flex;
-            gap: rem(84);
+            gap: 7.9632%;
         }
     }
 
-.two-colums__inner.inner{
-        padding-left: rem(21);
-        padding-right: rem(21);
-    }
 
 
 .two-colums__inner--single.inner{
@@ -38,8 +31,8 @@
     padding-right: rem(15);
 
     @include mq("md"){
-      padding-left:rem(21) ;
-    padding-right: rem(21);
+      padding-left:rem(25) ;
+    padding-right: rem(25);
     }
 }
 
@@ -68,7 +61,7 @@
     padding-right: rem(25);
     margin-top: rem(78);
     @include mq("md"){
-    width: 27.05%;    
+    width: 27.2222%;    
     padding-left: 0;
     padding-right: 0;  
     margin: 0;
@@ -251,7 +244,7 @@
 
 .two-colums__left{
     @include mq("md"){
-        width: 64.89%;
+        width: 64.8148%;
     }
 }
 
@@ -287,89 +280,9 @@
 
 }
 
-.two-colums__topic{
-    text-align: left;
-    color: var(--green, #0D2936);
-    font-family: "Noto Sans JP";
-    font-style: normal;
-    font-weight: 500;
-    border-bottom:rem(1) solid var(--greenaccent, #408F95) ;
 
 
 
 
-    font-size: rem(24);
-line-height: normal;
-margin-top: rem(8);
-@include mq("md"){
-
-    font-size: rem(32);
-    margin-top: rem(8);
-    padding: 0;
-}
-}
 
 
-.two-colums__imgbig{
-
-
-    aspect-ratio: 700/468;
-
-    margin-top: rem(24);
-    @include mq("md"){margin-top: rem(40);}
-}
-
-.two-colums__sentence{
-    color: var(--green, #0D2936);
-    font-family: "Noto Sans JP";
-    font-size: rem(16);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5; /* 150% */
-    text-align: left;
-    letter-spacing: 0.005em;
-    margin-top: rem(24);
-    @include mq("md"){ margin-top: rem(34);}
-}
-
-
-.two-colums__list{
-    margin-top: rem(24);
-    @include mq("md"){ margin-top: rem(40);}
-}
-
-.two-colums__list li{
-    position: relative;
-    padding-left: rem(28);
-    color: var(--green, #0D2936);
-    font-family: "Noto Sans JP";
-    font-size: rem(16);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5; /* 150% */
-    @include mq("md"){
-    padding-left: rem(34);}
-}
-
-.two-colums__list li:not(:first-child){
-    margin-top: rem(4);
-    @include mq("md"){margin-top: rem(6);}
-}
-
-.two-colums__list li::before{
-    background-image: url(../images/common/hitode2.jpg);
-    background-size: contain;
-    content: "";
-    display: block;
-    height: rem(18);
-    position: absolute;
-    width: rem(18);
-    left: rem(0);
-    top: 0;
-
-    @include mq("md"){
-    left:rem(4);
-    top: rem(4);
-}
-  
-}
