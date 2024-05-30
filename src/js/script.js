@@ -193,7 +193,9 @@ jQuery(function ($) {
 // toggle triangle
 jQuery(function ($) {
   $('.js-two-colums__year').on('click', function () {
-    $(this).toggleClass('is-active');  
+    $(this).toggleClass('is-active');
+    $(this).find('.two-colums__content').slideToggle(); 
+
   });
 });
 

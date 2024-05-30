@@ -14,12 +14,8 @@
 }
 
 .blog-cards.blog-cards--2co{
-    row-gap: rem(40);
     @include mq("md"){   
-        row-gap: rem(80);
-        column-gap:rem(40) ;
         grid-template-columns: repeat(2, 1fr);
-        display: grid;  
         }
 
 }

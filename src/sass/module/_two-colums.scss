@@ -32,7 +32,7 @@
 
     @include mq("md"){
       padding-left:rem(25) ;
-    padding-right: rem(25);
+      padding-right: rem(25);
     }
 }
 
@@ -55,7 +55,6 @@
     box-shadow: rem(2) rem(2) rem(10) 0px rgba(0, 0, 0, 0.25);
 }
 
-
 .two-colums__right{
     padding-left: rem(25);
     padding-right: rem(25);
@@ -67,9 +66,6 @@
     margin: 0;
     }
 }
-
-
-
 
 .two-colums__img{
     width: 47.1%;
@@ -98,9 +94,7 @@
 .two-colums__wrap{
     display: flex;
     gap: rem(16);
-    // height: auto;
-    
-
+   
 }
 
 .two-colums__date{
@@ -186,6 +180,7 @@
     line-height: normal;
     position: relative;
     padding-left: rem(32);
+
 }
 
 .two-colums__year::before{
@@ -199,21 +194,30 @@
     left: 0.3%;
     position: absolute;
     top: 7%;
-    transition: transform 0.3s;
+   
     width: 1.5rem;
 }
 
 .two-colums__year.is-active::before{
     background-image: url(../images/common/sankaku2.png);
+    
+  
+    
 }
 
-
-.two-colums__year.is-active li:not(:first-child){
+.two-colums__content.is-active{
     display: none;
+    // opacity: 0;
+   
+
 }
+
+
+
 
 
 .two-colums__month{
+    display: block;
     position: relative;
     color: var(--greenaccent, #408F95);
     font-family: "Noto Sans JP";
@@ -223,6 +227,7 @@
     line-height: normal;
     padding-left: rem(24);
     margin-top: rem(6);
+   
 }
 
 
