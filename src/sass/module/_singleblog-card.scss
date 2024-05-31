@@ -28,7 +28,8 @@
 }
 
 .singleblog-card__content div{
-    margin-top: rem(40);
+    margin-top: rem(24);
+    @include mq("md"){margin-top: rem(40);}
 }
 
 .singleblog-card__imgbig{
