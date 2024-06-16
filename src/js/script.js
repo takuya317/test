@@ -194,7 +194,7 @@ jQuery(function ($) {
 jQuery(function ($) {
   $('.js-two-colums__year').on('click', function () {
     $(this).toggleClass('is-active');
-    $(this).find('.two-colums__content').slideToggle(); 
+    $(this).find('.archive-block__content').slideToggle(); 
 
   });
 });

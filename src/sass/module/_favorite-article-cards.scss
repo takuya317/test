@@ -1,0 +1,8 @@
+@use "global" as *;
+
+.favorite-article-cards{
+  display: flex;
+  flex-direction: column;
+  gap: rem(24); 
+
+}

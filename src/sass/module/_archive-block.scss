@@ -1,0 +1,81 @@
+@use "global" as *;
+
+.archive-block__content.is-active{
+  display: none;
+ 
+
+}
+
+
+.archive-block__year{
+  color: var(--greenaccent, #408F95);
+  font-family: "Noto Sans JP";
+  font-size: rem(24);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+  padding-left: rem(32);
+
+}
+
+.archive-block__year::before{
+  background-image: url(../images/common/sankaku1.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  height: 1.5rem;
+  left: 0.3%;
+  position: absolute;
+  top: 7%;
+ 
+  width: 1.5rem;
+}
+
+.archive-block__year.is-active::before{
+  background-image: url(../images/common/sankaku2.png);
+  
+
+  
+}
+
+.archive-block__year.is-active::before{
+  background-image: url(../images/common/sankaku2.png);
+  
+
+  
+}
+
+
+.archive-block__month{
+  display: block;
+  position: relative;
+  color: var(--greenaccent, #408F95);
+  font-family: "Noto Sans JP";
+  font-size: rem(24);
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding-left: rem(24);
+  margin-top: rem(6);
+ 
+}
+
+
+
+.archive-block__month::after{
+  background-image: url(../images/common/sankaku2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  display: inline-block;
+  height: 1.5rem;
+  left: -1%;
+  position: absolute;
+  top: 7%;
+  transition: transform 0.3s;
+  width: 1.5rem;
+}

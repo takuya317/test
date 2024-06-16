@@ -1,0 +1,50 @@
+@use "global" as *;
+
+.favorite-article-card{
+  padding: rem(16);
+  background: var(--White, #FFF);
+  box-shadow: rem(2) rem(2) rem(10) 0px rgba(0, 0, 0, 0.25);
+
+}
+
+.favorite-article-card__wrap{
+  display: flex;
+  gap: rem(16);
+
+
+}
+
+.favorite-article-card__img{
+
+  width: 47.1%;
+}
+
+.favorite-article-card__img img{
+  aspect-ratio: 121/90;
+  object-fit: cover;
+}
+
+.favorite-article-card__textes{
+  width: 48%;
+}
+
+.favorite-article-card__date{
+  margin: 0;
+  font-size: rem(14);
+  line-height: 1.28571; /* 128.571% */
+  color: var(--green, #0D2936);
+  font-family: Gotu;
+  font-style: normal;
+  font-weight: 400;
+  text-align: left;
+  display: block;
+}
+
+.favorite-article-card__text{
+  color: var(--green, #0D2936);
+  font-family: "Noto Sans JP";
+  font-size: rem(16);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1;
+}

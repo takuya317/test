@@ -3,15 +3,20 @@
 
 
 .two-colums__campaign-cards{
-    display: flex;
-    flex-direction: column;
-    gap: rem(40);
+   
     margin-top: rem(28);
     @include mq("md"){ 
         margin-top: rem(24); 
-        gap: rem(44);
+       
     }
 }
+
+
+.two-colums__items{
+
+    margin-top: rem(24);
+}
+
 
 
     .two-colums__inner,
@@ -42,18 +47,13 @@
    @include mq("md"){ margin-top: rem(80);}
 }
 
-.two-colums__items{
-    margin-top: rem(24);
-    display: flex;
-    flex-direction: column;
-    gap: rem(24); 
-}
 
-.two-colums__item{
-    padding: rem(16);
-    background: var(--White, #FFF);
-    box-shadow: rem(2) rem(2) rem(10) 0px rgba(0, 0, 0, 0.25);
-}
+
+// .two-colums__item{
+//     padding: rem(16);
+//     background: var(--White, #FFF);
+//     box-shadow: rem(2) rem(2) rem(10) 0px rgba(0, 0, 0, 0.25);
+// }
 
 .two-colums__right{
     padding-left: rem(25);
@@ -67,45 +67,45 @@
     }
 }
 
-.two-colums__img{
-    width: 47.1%;
-}
+// .two-colums__img{
+//     width: 47.1%;
+// }
 
-.two-colums__img img{
-    aspect-ratio: 121/90;
-    object-fit: cover;
-}
+// .two-colums__img img{
+//     aspect-ratio: 121/90;
+//     object-fit: cover;
+// }
 
-.two-colums__textes{
-    width: 48%;
-}
+// .two-colums__textes{
+//     width: 48%;
+// }
 
-.two-colums__text{
+// .two-colums__text{
 
-    color: var(--green, #0D2936);
-    font-family: "Noto Sans JP";
-    font-size: rem(16);
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1;
-}
+//     color: var(--green, #0D2936);
+//     font-family: "Noto Sans JP";
+//     font-size: rem(16);
+//     font-style: normal;
+//     font-weight: 500;
+//     line-height: 1;
+// }
 
 
-.two-colums__wrap{
-    display: flex;
-    gap: rem(16);
+// .two-colums__wrap{
+//     display: flex;
+//     gap: rem(16);
    
-}
+// }
 
-.two-colums__date{
-    color: var(--green, #0D2936);
-    font-family: Gotu;
-    font-size: rem(12);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5; /* 150% */
-    vertical-align: top;
-}
+// .two-colums__date{
+//     color: var(--green, #0D2936);
+//     font-family: Gotu;
+//     font-size: rem(12);
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: 1.5; /* 150% */
+//     vertical-align: top;
+// }
 
 .two-colums__kutikomi{
     margin-top: rem(80);
@@ -117,8 +117,7 @@
 
 .two-colums__kutikomi-img{
     margin-top: rem(24);
-    aspect-ratio: 294/218;
-    object-fit: cover;
+   
 }
 
 .two-colums__head{
@@ -130,33 +129,33 @@
 }
 
 
-.two-colums__age{
-    color: #0D2936;
-    font-family: "Noto Sans JP";
-    font-size: rem(12);
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.5; /* 150% */
-    margin-top: rem(16);
-    text-align: left;
-}
+// .two-colums__age{
+//     color: #0D2936;
+//     font-family: "Noto Sans JP";
+//     font-size: rem(12);
+//     font-style: normal;
+//     font-weight: 400;
+//     line-height: 1.5; /* 150% */
+//     margin-top: rem(16);
+//     text-align: left;
+// }
 
-.two-colums__tittle{
-    color: var(--green, #0D2936);
-    font-family: "Noto Sans JP";
-    font-size: rem(24);
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-top: rem(8);
-    text-align: left;
+// .two-colums__tittle{
+//     color: var(--green, #0D2936);
+//     font-family: "Noto Sans JP";
+//     font-size: rem(24);
+//     font-style: normal;
+//     font-weight: 500;
+//     line-height: normal;
+//     margin-top: rem(8);
+//     text-align: left;
     
-}
+// }
 
-.two-colums__btn{
-    margin-top: rem(43);
+// .two-colums__btn{
+//     margin-top: rem(43);
 
-}
+// }
 
 .two-colums__campaign{
     margin-top: rem(82);
@@ -207,7 +206,6 @@
 
 .two-colums__content.is-active{
     display: none;
-    // opacity: 0;
    
 
 }

@@ -1,0 +1,34 @@
+@use "global" as *;
+
+.kutikomi-card__tittle{
+  color: var(--green, #0D2936);
+  font-family: "Noto Sans JP";
+  font-size: rem(24);
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-top: rem(8);
+  text-align: left;
+  
+}
+
+.kutikomi-card__img{
+  aspect-ratio: 294/218;
+  object-fit: cover;
+}
+
+.kutikomi-card__age{
+  color: #0D2936;
+  font-family: "Noto Sans JP";
+  font-size: rem(12);
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  margin-top: rem(16);
+  text-align: left;
+}
+
+.kutikomi-card__btn{
+  margin-top: rem(43);
+
+}
